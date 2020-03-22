@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  --m-space1: 0.5rem;
+  --m-space2: calc(var(--m-space1) * 2);
+  --m-space3: calc(var(--m-space1) * 3);
+  --m-space4: calc(var(--m-space1) * 4);
+  --m-space5: calc(var(--m-space1) * 5);
+  --m-space6: calc(var(--m-space1) * 6);
+  --m-space7: calc(var(--m-space1) * 7);
+  --m-space8: calc(var(--m-space1) * 8);
+  --m-space9: calc(var(--m-space1) * 9);
+  --m-space10: calc(var(--m-space1) * 10);
+
+  --m-space: var(--m-space2);
+}
+
+body {
+  --m-black: #000;
+  --m-white: #fff;
+}

@@ -1,0 +1,44 @@
+/* Table Base Styles */
+.table {
+  width: 100%;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem , 1fr));
+}
+
+.table td,
+.table th {
+  padding: var(--m-space1);
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+
+.table caption {
+  caption-side: bottom;
+  margin-top: var(--m-space);
+}
+
+/* Table Theme 1 */
+.table.theme1 {
+  border: 1px solid gray;
+  border-width: 1px 0 0 1px;
+}
+
+.table.theme1 thead,
+.table.theme1 th {
+  background: black;
+  color: white;
+}
+
+.table.theme1 tr {
+  border-bottom: 1px solid gray;
+}
+
+.table.theme1 td,
+.table.theme1 th {
+  border-right: 1px solid gray;
+}
+

@@ -1,0 +1,35 @@
+* {
+  line-height: 1;
+}
+
+h1 {
+  font-size: var(--m-space7);
+}
+
+h2 {
+  font-size: var(--m-space6);
+}
+
+h3 {
+  font-size: var(--m-space5);
+}
+
+h4 {
+  font-size: var(--m-space4);
+}
+
+h5 {
+  font-size: var(--m-space3);
+}
+
+h6 {
+  font-size: var(--m-space2);
+}
+
+.text--1 {
+  line-height: 1.15
+}
+
+.text {
+  line-height: 1.2;
+}

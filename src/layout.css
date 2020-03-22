@@ -1,0 +1,84 @@
+.pad {
+  padding: var(--m-space1);
+}
+.pad--2 {
+  padding: var(--m-space2);
+}
+.pad--3 {
+  padding: var(--m-space3);
+}
+
+.mt {
+  margin-top: var(--m-space);
+}
+
+.mb {
+  margin-bottom: var(--m-space);
+}
+
+.m,
+.margin {
+  margin: var(--m-space);
+}
+
+.mbt,
+.mtb {
+  margin-top: var(--m-space);
+  margin-bottom: var(--m-space);
+}
+
+.df,
+.flex {
+  display: flex;
+}
+
+.fc,
+.fdc,
+.fcol,
+.flex-col {
+  flex-direction: column;
+}
+
+.fr,
+.fdr,
+.frow,
+.flex-row {
+  flex-direction: row;
+}
+
+.ac,
+.aic,
+.acenter {
+  align-items: center;
+}
+
+.jc,
+.jcc,
+.jcenter {
+  justify-content: center;
+}
+
+.jcsb,
+.spbtwn,
+.spcbtwn,
+.space-between {
+  justify-content: space-between;
+}
+
+/* vertical space out */
+.vsp--1 > *:nth-last-child(n + 2) {
+  margin-bottom: var(--m-space1);
+}
+
+.vsp > *:nth-last-child(n + 2),
+.vsp--2 > *:nth-last-child(n + 2) {
+  margin-bottom: var(--m-space2);
+}
+
+.vsp--3 > *:nth-last-child(n + 2) {
+  margin-bottom: var(--m-space3);
+}
+
+.vsp--4 > *:nth-last-child(n + 2) {
+  margin-bottom: var(--m-space4);
+}
