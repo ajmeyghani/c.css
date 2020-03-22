@@ -23,22 +23,22 @@
 
 /* Table Theme 1 */
 .table.theme1 {
-  border: 1px solid gray;
+  border: 1px solid var(--m-gray);
   border-width: 1px 0 0 1px;
 }
 
 .table.theme1 thead,
 .table.theme1 th {
-  background: black;
-  color: white;
+  background: var(--m-black);
+  color: var(--m-white);
 }
 
 .table.theme1 tr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--m-gray);
 }
 
 .table.theme1 td,
 .table.theme1 th {
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--m-gray);
 }
 
