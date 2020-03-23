@@ -1,3 +1,7 @@
+body {
+ font-family: 'Segoe UI Regular', sans-serif;
+}
+
 .vertical-grid {
   position: relative;
 }
@@ -17,16 +21,16 @@
 
 .vertical-grid::after {
   top: 0;
-  background: linear-gradient(rgba(255, 0, 252, 0.5) 1px, transparent 1px) left
+  background: linear-gradient(rgba(84, 41, 255, 0.67) 1px, transparent 1px) left
     top / 1px var(--base-font-size);
 }
 
 body.vertical-grid *:not(hr) {
-  background-color: rgba(0, 0, 0, 0.06) !important;
+  background-color: rgba(0, 0, 0, 0.18) !important;
 }
 
 .page {
-  max-width: 55rem;
+  max-width: 1024px;
   margin: 0 auto;
   padding: var(--m-space);;
   padding-top: var(--m-space8);
@@ -40,6 +44,4 @@ body.vertical-grid *:not(hr) {
   border-radius: 3px;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Apple System', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
-}
+
