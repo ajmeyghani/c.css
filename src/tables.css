@@ -29,6 +29,7 @@
 .table.theme1 {
   border: 1px solid var(--m-gray);
   border-width: 1px 0 0 1px;
+  line-height: 1.5;
 }
 
 .table.theme1 thead,

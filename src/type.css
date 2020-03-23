@@ -1,6 +1,6 @@
 body {
   font-size: 1.1875rem;
-  line-height: 32px;
+  line-height: 2rem;
 }
 
 small {
@@ -45,4 +45,21 @@ h6 {
 .bb, .border-bottom {
   border-bottom: 1px solid;
   padding-bottom: var(--m-space);
+}
+
+ul, li, ol {
+  margin-bottom: var(--m-space)
+}
+
+ul, ol {
+  padding-left: var(--m-space);
+  margin-left: var(--m-space)
+}
+
+figcaption {
+  line-height: 1.6rem
+}
+
+fieldset {
+  padding: var(--m-space)
 }

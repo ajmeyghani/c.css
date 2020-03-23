@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/fonts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/minireset.css/minireset.css" />
     <!-- <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css"> -->
     <link rel="stylesheet" href="/src/modern.css" />
+    <link rel="stylesheet" href="/src/grid.css">
     <link rel="stylesheet" href="/src/props.css" />
     <link rel="stylesheet" href="/src/type.css" />
     <link rel="stylesheet" href="/src/layout.css" />
@@ -85,7 +86,7 @@
       <section class="eqvspace">
         <header>
           <nav>
-            <ul>
+            <ul class="eqvspace">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
@@ -104,15 +105,6 @@
             acronym tag like this: <acronym title="For The Win">ftw</acronym>.
             You can define <del>deleted text</del> which often gets replaced
             with <ins>inserted</ins> text.
-          </p>
-          <p>
-            You can also use <kbd>keyboard text</kbd>, which sometimes is styled
-            similarly to the <code>&lt;code&gt;</code> or
-            <samp>samp</samp> tags. Even more specifically, there is a tag just
-            for <var>variables</var>. Not to be mistaken with blockquotes below,
-            the quote tag lets you denote something as <q>quoted text</q>.
-            Lastly don't forget the sub (H<sub>2</sub>O) and sup (E =
-            MC<sup>2</sup>) tags.
           </p>
         </article>
         <aside>This is an aside.</aside>
@@ -357,7 +349,7 @@
         >
       </section>
 
-      <figure>
+      <figure class="eqvspace">
         <img src="/image.png" />
         <figcaption>
           Random image <a href="">link</a> to another page.
@@ -365,7 +357,7 @@
       </figure>
 
       <section>
-        <form class="eqvspace--1">
+        <form class="eqvspace">
           <p>
             <label for="example-input-email">Email address</label>
             <input

@@ -1,39 +1,11 @@
 body {
- font-family: 'Segoe UI Regular', sans-serif;
-}
-
-.vertical-grid {
-  position: relative;
-}
-
-.vertical-grid::after {
-  position: absolute;
-  width: auto;
-  height: auto;
-  z-index: 9999;
-  content: "";
-  display: block;
-  pointer-events: none;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-}
-
-.vertical-grid::after {
-  top: 0;
-  background: linear-gradient(rgba(84, 41, 255, 0.67) 1px, transparent 1px) left
-    top / 1px var(--base-font-size);
-}
-
-body.vertical-grid *:not(hr) {
-  background-color: rgba(0, 0, 0, 0.18) !important;
+  font-family: 'Lato', sans-serif;
 }
 
 .page {
   max-width: 1024px;
   margin: 0 auto;
   padding: var(--m-space);;
-  padding-top: var(--m-space8);
 }
 
 #toggle-grid-button {
