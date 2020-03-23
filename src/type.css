@@ -1,35 +1,39 @@
-* {
-  line-height: 1;
+body {
+  font-size: 1.1875rem;
+  line-height: 2rem;
+}
+
+small {
+  font-weight: 1rem;
+  line-height: 1rem;
 }
 
 h1 {
   font-size: var(--m-space7);
+  line-height: 3rem;
 }
 
 h2 {
   font-size: var(--m-space6);
+  line-height: 3rem;
 }
 
 h3 {
   font-size: var(--m-space5);
+  line-height: 2rem;
 }
 
 h4 {
   font-size: var(--m-space4);
+  line-height: 2rem;
 }
 
 h5 {
   font-size: var(--m-space3);
+  line-height: 1rem
 }
 
 h6 {
   font-size: var(--m-space2);
-}
-
-.text--1 {
-  line-height: 1.15
-}
-
-.text {
-  line-height: 1.2;
+  line-height: 1rem;
 }
