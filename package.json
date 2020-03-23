@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "minireset.css": "^0.0.6",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "vertical-rhythm-reset": "^1.2.0"
   }
 }

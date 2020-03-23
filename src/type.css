@@ -1,6 +1,6 @@
 body {
   font-size: 1.1875rem;
-  line-height: 2rem;
+  line-height: 32px;
 }
 
 small {
@@ -9,31 +9,36 @@ small {
 }
 
 h1 {
-  font-size: var(--m-space7);
-  line-height: 3rem;
+  font-size: 3.1rem;
+  line-height: 48px;
 }
 
 h2 {
-  font-size: var(--m-space6);
-  line-height: 3rem;
+  font-size: 2.4rem;
+  line-height: 47px;
 }
 
 h3 {
-  font-size: var(--m-space5);
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 33px;
 }
 
 h4 {
-  font-size: var(--m-space4);
-  line-height: 2rem;
+  font-size: 1.6rem;
+  line-height: 33px;
 }
 
 h5 {
-  font-size: var(--m-space3);
-  line-height: 1rem
+  font-size: 1.5rem;
+  line-height: 14px;
 }
 
 h6 {
-  font-size: var(--m-space2);
-  line-height: 1rem;
+  font-size: 1.3rem;
+  line-height: 17px;
+}
+
+.bb, .border-bottom {
+  border-bottom: 1px solid;
+  padding-bottom: var(--m-space);
 }

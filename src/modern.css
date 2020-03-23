@@ -1,0 +1,45 @@
+.vertical-grid {
+  position: relative;
+}
+
+.vertical-grid::after {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 9999;
+  content: "";
+  display: block;
+  pointer-events: none;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.vertical-grid::after {
+  top: 0;
+  background: linear-gradient(rgba(255, 0, 252, 0.5) 1px, transparent 1px) left
+    top / 1px var(--base-font-size);
+}
+
+body.vertical-grid *:not(hr) {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+.page {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: var(--m-space);;
+  padding-top: var(--m-space8);
+}
+
+#toggle-grid-button {
+  background: none;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple System', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+}
