@@ -42,24 +42,16 @@ h6 {
   line-height: 1.0625rem;
 }
 
-.bb, .border-bottom {
+.bb,
+.border-bottom {
   border-bottom: 1px solid;
   padding-bottom: var(--m-space);
 }
 
-ul li {
-  list-style: disc;
-  margin-left: var(--m-space)
-}
-
-ol li, ul li {
-  margin-left: 1.3rem
-}
-
 figcaption {
-  line-height: 1.6rem
+  line-height: 1.6rem;
 }
 
 fieldset {
-  padding: var(--m-space)
+  padding: var(--m-space);
 }
