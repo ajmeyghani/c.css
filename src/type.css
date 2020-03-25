@@ -1,5 +1,5 @@
 body {
-  font-size: 1.1875rem;
+  font-size: 1.05rem;
   line-height: 2rem;
   font-weight: 100;
 }
@@ -50,9 +50,12 @@ h6 {
 }
 
 figcaption {
-  line-height: 1.6rem;
+  line-height: 1.4;
 }
 
 fieldset {
-  padding: var(--m-space);
+  line-height: 1.9375rem;
+  padding: var(--m-space1);
+  border: 1px solid #bbb;
+  border-radius: 2px;
 }

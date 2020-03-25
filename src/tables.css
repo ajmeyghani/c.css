@@ -1,6 +1,7 @@
 /* Table Base Styles */
 .table {
   width: 100%;
+  line-height: 1.4375rem;
 }
 
 .table tr {
@@ -19,17 +20,16 @@
 .table caption {
   caption-side: bottom;
   margin-top: var(--m-space);
+  line-height: 0.8;
 }
 
 .table tfoot td {
-  padding: 0.8rem;
 }
 
 /* Table Theme 1 */
 .table.theme1 {
   border: 1px solid var(--m-gray);
   border-width: 1px 0 0 1px;
-  line-height: 1.5;
 }
 
 .table.theme1 thead,
