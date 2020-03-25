@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-gutenberg-web-type@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/gutenberg-web-type/-/gutenberg-web-type-1.2.3.tgz#8b6187155884b6e288a4915c459eb274f42c71e5"
-  integrity sha1-i2GHFViEtuKIpJFcRZ6ydPQsceU=
-
 minireset.css@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/minireset.css/-/minireset.css-0.0.6.tgz#da387bf21b443e4906ea75c79daef20ab45c2b00"
@@ -16,8 +11,3 @@ normalize.css@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
-
-vertical-rhythm-reset@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vertical-rhythm-reset/-/vertical-rhythm-reset-1.2.0.tgz#5a7754ee539dafe556e1dd6045c46d183fc7eb92"
-  integrity sha512-gbsuHYaLqaQhN4T/QNB5qIi3o4PN7jMIS0CLSg+pUNC9oks7L/qu/413xLzWZW4Rj1g27bSoyP5hekQGxWA4AQ==
