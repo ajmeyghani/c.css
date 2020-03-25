@@ -1,3 +1,13 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.page {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: var(--m-space);
+}
+
 .vertical-grid {
   position: relative;
 }
@@ -17,10 +27,18 @@
 
 .vertical-grid::after {
   top: 0;
-  background: linear-gradient(rgb(0, 173, 255) 1px, transparent 1px) left
-    top / 1px var(--base-font-size)
+  background: linear-gradient(rgb(0, 173, 255) 1px, transparent 1px) left top /
+    1px var(--base-font-size);
 }
 
 body.vertical-grid *:not(hr) {
   background-color: rgba(169, 118, 158, 0.13) !important;
+}
+
+#toggle-grid-button {
+  background: none;
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
 }
