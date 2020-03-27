@@ -32,12 +32,6 @@
   border-width: 1px 0 0 1px;
 }
 
-.table.theme1 thead,
-.table.theme1 th {
-  background: var(--m-black);
-  color: var(--m-white);
-}
-
 .table.theme1 tr {
   border-bottom: 1px solid var(--m-gray);
 }
