@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 .pad {
   padding: var(--m-space2);
 }
@@ -85,4 +89,8 @@
 .vsp--4 > *:nth-last-child(n + 2),
 .eqvspace--4 > *:nth-last-child(n + 2) {
   margin-bottom: var(--m-space4);
+}
+
+.h100 {
+  height: 100%;
 }
