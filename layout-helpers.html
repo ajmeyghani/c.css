@@ -21,36 +21,38 @@
       grid-template-rows: 1fr;
       height: 100%
     }
-    .boxes {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
-    }
     .box {
-      width: 200px;
-      height: 200px;
-      background: black
+      width: 100%;
+      background: var(--m-gray1);
+      border: 1px solid var(--m-black);
+    }
+    .grid-gallery {
+      --m-flexible-cell-min-width: 5rem;
+      --m-flexible-row-height: 2.5rem;
     }
   </style>
 </head>
-<body class="vertical-grid">
-  <main class="boxes">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+<body class="">
+  <main class="vsp pad">
+    <p><code>Flexible Grid</code></p>
+    <div class="flexible-grid grid-gallery">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
   </main>
 </body>
 </html>

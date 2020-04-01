@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
 }
 
 .pad {
@@ -17,7 +18,8 @@ body, html {
   padding-bottom: var(--m-space);
 }
 
-.pbt, .ptb {
+.pbt,
+.ptb {
   padding-top: var(--m-space);
   padding-bottom: var(--m-space);
 }
@@ -41,8 +43,26 @@ body, html {
   margin-bottom: var(--m-space);
 }
 
-.grid, .dg {
+.grid,
+.dg {
   display: grid;
+}
+
+.flexible-grid {
+  --m-flexible-cell-min-width: 17rem;
+  --m-flexible-row-height: 5rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--m-flexible-cell-min-width), 1fr)
+  );
+  grid-gap: var(--m-space);
+  grid-auto-rows: var(--m-flexible-row-height);
+  align-items: stretch;
+}
+
+.flexible-grid > * {
+  width: 100%;
 }
 
 .df,
@@ -51,7 +71,7 @@ body, html {
 }
 
 .flex1 {
-  flex: 1
+  flex: 1;
 }
 
 .fc,

@@ -17,8 +17,11 @@ A modern CSS framework for modern browsers.
 - `flex-col`: sets `display-direction` to column.
 - `flex-row`: sets `display-direction` to row.
 - `align-items-center` or `aic`: sets `align-items` to `center`.
-- `just-content-center` or `jcc`: sets `justify-content` to `center`.
+- `justify-content-center` or `jcc`: sets `justify-content` to `center`.
 - `h100`: sets height to 100%.
+- `flexible-grid`: when set on a parent, it will create a grid with auto-fit set as repeat. The following custom properties can be set:
+    - `--m-flexible-cell-min-width`, default: `17rem`;
+    - `--m-flexible-row-height`, default: `15rem`;
 
 ## Examples
 
