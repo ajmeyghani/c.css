@@ -50,6 +50,10 @@ body, html {
   display: flex;
 }
 
+.flex1 {
+  flex: 1
+}
+
 .fc,
 .fdc,
 .fcol,

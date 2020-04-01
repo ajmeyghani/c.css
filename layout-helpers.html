@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/node_modules/minireset.css/minireset.css" />
+  <link rel="stylesheet" href="/src/page.css" />
+  <link rel="stylesheet" href="/src/variables.css" />
+  <link rel="stylesheet" href="/src/type.css" />
+  <link rel="stylesheet" href="/src/layout.css" />
+  <link rel="stylesheet" href="/src/tables.css" />
+  <link rel="stylesheet" href="/src/lists.css" />
+  <script src="/vertical-grid.js"></script>
+  <title>Layout Helpers</title>
+  <style>
+    html {
+      display: grid;
+      grid-template-rows: 1fr;
+      height: 100%
+    }
+    .boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background: black
+    }
+  </style>
+</head>
+<body class="vertical-grid">
+  <main class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </main>
+</body>
+</html>
