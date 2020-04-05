@@ -4,17 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf dist",
-    "cssw": "yarn clean && rollup --config ./rollup.dev.js --watch"
+    "css": "bash css.sh && cleancss -o dist/modern.min.css dist/modern.css",
+    "cssw": "nodemon --exec bash ./css.sh --watch src -e css"
   },
   "dependencies": {
     "minireset.css": "^0.0.6"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
-    "rollup": "^2.3.3",
-    "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-postcss": "^2.5.0"
+    "clean-css-cli": "^4.3.0"
   }
 }

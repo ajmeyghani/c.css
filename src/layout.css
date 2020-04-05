@@ -1,7 +1,4 @@
-body,
-html {
-}
-
+/* layout helpers */
 .pad {
   padding: var(--m-space2);
 }
