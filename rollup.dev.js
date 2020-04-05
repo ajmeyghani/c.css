@@ -5,27 +5,22 @@ import postcss from "rollup-plugin-postcss";
 
 const postCssConfig = postcss({
   extensions: [".css"],
-  extract: 'dist/modern.css',
-  inject: false
+  extract: "dist/modern.css",
+  inject: false,
 });
 
 const resolveConf = resolve({
   customResolveOptions: {
-    moduleDirectory: "src"
-  }
+    moduleDirectory: "src",
+  },
 });
 
 const clean = clear({
   targets: ["umd", "esm"],
-  watch: false
+  watch: false,
 });
 
-const commonPlugins = [
-  postCssConfig,
-  resolveConf,
-  commonjs(),
-  clean
-];
+const commonPlugins = [postCssConfig, resolveConf, commonjs(), clean];
 
 const modules = [
   {
@@ -33,11 +28,11 @@ const modules = [
     output: {
       name: "moderncss",
       file: "./dist/index.js",
-      sourcemap: true
+      sourcemap: true,
     },
     external: [],
-    plugins: commonPlugins
-  }
-]
+    plugins: commonPlugins,
+  },
+];
 
 export default modules;

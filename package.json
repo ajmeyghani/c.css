@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "cssw": "rollup --config ./rollup.dev.js --watch"
+    "clean": "rm -rf dist",
+    "cssw": "yarn clean && rollup --config ./rollup.dev.js --watch"
   },
   "dependencies": {
     "minireset.css": "^0.0.6"
