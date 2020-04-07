@@ -1,7 +1,6 @@
 /* ordered lists */
 ol {
   list-style-type: none;
-  /*counter-reset: item;*/
   margin: 0;
   padding: 0;
 }

@@ -1,0 +1,9 @@
+.bb,
+.border-bottom {
+  border-bottom: 1px solid;
+  padding-bottom: var(--m-space);
+}
+
+.border {
+  border: 1px solid var(--m-black);
+}

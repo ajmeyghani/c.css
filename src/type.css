@@ -51,12 +51,6 @@ h6 {
   line-height: 1.0625rem;
 }
 
-.bb,
-.border-bottom {
-  border-bottom: 1px solid;
-  padding-bottom: var(--m-space);
-}
-
 figcaption {
   line-height: 1.5625rem;
 }
