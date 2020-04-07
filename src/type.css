@@ -71,3 +71,7 @@ code {
   background-color: var(--m-gray2);
   padding: var(--m-space1);
 }
+
+.strong {
+  font-weight: 400;
+}
