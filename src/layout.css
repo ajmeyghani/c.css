@@ -71,10 +71,6 @@
   display: flex;
 }
 
-.flex1 {
-  flex: 1;
-}
-
 .fc,
 .fdc,
 .fcol,
@@ -119,6 +115,10 @@
 .vsp--4 > *:nth-last-child(n + 2),
 .eqvspace--4 > *:nth-last-child(n + 2) {
   margin-bottom: var(--m-space4);
+}
+
+.flex1 {
+  display: flex;
 }
 
 .flex1 > * {
