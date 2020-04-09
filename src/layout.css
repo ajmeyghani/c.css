@@ -25,6 +25,13 @@
   padding-bottom: var(--m-space);
 }
 
+.pl { padding-left: var(--m-space) }
+.pr { padding-right: var(--m-space) }
+.plf, .prl {
+  padding-left: var(--m-space);
+  padding-right: var(--m-space);
+}
+
 .mt {
   margin-top: var(--m-space);
 }

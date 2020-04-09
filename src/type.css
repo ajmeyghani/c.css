@@ -69,7 +69,7 @@ blockquote {
 
 code {
   background-color: var(--m-gray2);
-  padding: var(--m-space1);
+  padding: 0
 }
 
 .strong {
