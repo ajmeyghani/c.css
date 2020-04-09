@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="/dist/modern.css">
-  <link rel="stylesheet" href="/page.css">
-  <script src="/vertical-grid.js"></script>
-  <title>Layout Helpers</title>
-  <style>
-    html {
-      display: grid;
-      grid-template-rows: 1fr;
-      height: 100%
-    }
-    .box {
-      width: 100%;
-      background: var(--m-gray1);
-      border: 1px solid var(--m-black);
-    }
-    .grid-gallery {
-      --m-flexible-cell-min-width: 5rem;
-      --m-flexible-row-height: 2.5rem;
-    }
-  </style>
-</head>
-<body class="">
-  <main class="vsp pad">
-    <section class="vsp">
-      <h4>Flexible Grid</h4>
-      <div class="flexible-grid grid-gallery">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/modern.css" />
+    <link rel="stylesheet" href="/page.css" />
+    <script src="/vertical-grid.js"></script>
+    <title>Layout Helpers</title>
+    <style>
+      html {
+        display: grid;
+        grid-template-rows: 1fr;
+        height: 100%;
+      }
+      .box {
+        width: 100%;
+        background: var(--m-gray1);
+        border: 1px solid var(--m-black);
+      }
+      .grid-gallery {
+        --m-flexible-cell-min-width: 5rem;
+        --m-flexible-row-height: 2.5rem;
+      }
+    </style>
+  </head>
+  <body class="">
+    <main class="vsp pad">
+      <section class="vsp">
+        <h4>Padding and Margins</h4>
+        <div class="pad border"><code>.pad</code>: 1rem</div>
+        <div class="pad--relaxed border"><code>.pad--relaxed</code>: 2rem</div>
+      </section>
 
-    <section class="vsp">
-      <h4>Padding and Margins</h4>
-      <div class="pad border">
-        <code>.pad</code>: 1rem
-      </div>
-      <div class="pad--relaxed border">
-        <code>.pad--relaxed</code>: 2rem
-      </div>
-    </section>
+      <section class="vsp">
+        <h4>Flex Helpers</h4>
+        <p>
+          Below are some examples on how to use flex helpers to make layouts.
+        </p>
+        <h6>.flex</h6>
+        <p>Can be used to set display to flex for a container element.</p>
+        <div class="flex">
+          <code>1</code>
+          <code>2</code>
+          <code>3</code>
+        </div>
+        <h6>.flex1</h6>
+        <p>
+          The <code>.flex1</code> can be used to set all the children elements
+          to flex.
+        </p>
+        <div class="flex1">
+          <code>1</code>
+          <code>2</code>
+          <code>3</code>
+        </div>
+        <h6>.space-between</h6>
+        <p>
+          Using with <code>.flex</code> and <code>.space-between</code> to
+          equally space out elements horizontally.
+        </p>
+        <div class="flex space-between border">
+          <p>left side</p>
+          <p>middle</p>
+          <p>right</p>
+        </div>
+      </section>
 
-    <section class="vsp">
-      <h4>Flex Helpers</h4>
-      <p>Below are some examples on how to use flex helpers to make layouts.</p>
-      <h6>.flex</h6>
-      <p>Can be used to set display to flex for a container element.</p>
-      <div class="flex">
-        <code>1</code>
-        <code>2</code>
-        <code>3</code>
-      </div>
-      <h6>.flex1</h6>
-      <p>The <code>.flex1</code> can be used to set all the children elements to flex.</p>
-      <div class="flex1">
-        <code>1</code>
-        <code>2</code>
-        <code>3</code>
-      </div>
-      <h6>.space-between</h6>
-      <p>Using with <code>.flex</code> and <code>.space-between</code> to equally space out elements horizontally.</p>
-      <div class="flex space-between border">
-        <p>left side</p>
-        <p>middle</p>
-        <p>right</p>
-      </div>
-    </section>
-  </main>
-</body>
+      <section class="vsp">
+        <h4>Flexible Grid</h4>
+        <div class="flexible-grid grid-gallery">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
