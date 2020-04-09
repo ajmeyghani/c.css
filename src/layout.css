@@ -112,6 +112,7 @@
 }
 
 /* Equally space out elements vertically. */
+.section > *:nth-last-child(n + 2),
 .vsp > *:nth-last-child(n + 2),
 .vsp--2 > *:nth-last-child(n + 2),
 .eqvspace > *:nth-last-child(n + 2),
@@ -119,6 +120,7 @@
   margin-bottom: var(--m-space2);
 }
 
+.section--4 > *:nth-last-child(n + 2),
 .vsp--4 > *:nth-last-child(n + 2),
 .eqvspace--4 > *:nth-last-child(n + 2) {
   margin-bottom: var(--m-space4);

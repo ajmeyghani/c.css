@@ -30,7 +30,10 @@
   <body class="">
     <main class="vsp pad">
       <section class="vsp">
-        <h4>Padding and Margins</h4>
+        <h2>Padding and Margins</h2>
+        <p>Below is a list of helper classes for setting padding and margings for elements.</p>
+
+        <h4>Padding</h4>
         <div class="pad border"><code>.pad</code>: 1rem</div>
         <div class="pad--relaxed border"><code>.pad--relaxed</code>: 2rem</div>
         <div class="pt border"><code>.pt</code>: padding top 1rem</div>
@@ -39,21 +42,30 @@
         <div class="pl border"><code>.pl</code>: padding left 1rem</div>
         <div class="pr border"><code>.pr</code>: padding right 1rem</div>
         <div class="plf border"><code>.plf</code>: padding left right 1rem</div>
+
+        <h4>Margin</h4>
+        <p>Similar to padding helper classes, there are also helper classes for margins. There are:</p>
+        <ul>
+          <li><code>.mt</code>: Margin top for 1rem</li>
+          <li><code>.mb</code>: Margin bottom for 1rem</li>
+          <li><code>.mbt</code>: Margin top and bottom for 1rem</li>
+          <li><code>.margin</code>: Margin around for 1rem</li>
+        </ul>
       </section>
 
       <section class="vsp">
-        <h4>Flex Helpers</h4>
+        <h2>Flex Helpers</h2>
         <p>
           Below are some examples on how to use flex helpers to make layouts.
         </p>
-        <h6>.flex</h6>
+        <h4>.flex</h4>
         <p>Can be used to set display to flex for a container element.</p>
         <div class="flex">
           <code>1</code>
           <code>2</code>
           <code>3</code>
         </div>
-        <h6>.flex1</h6>
+        <h4>.flex1</h4>
         <p>
           The <code>.flex1</code> can be used to set all the children elements
           to flex.
@@ -63,7 +75,7 @@
           <code>2</code>
           <code>3</code>
         </div>
-        <h6>.space-between</h6>
+        <h4>.space-between</h4>
         <p>
           Using with <code>.flex</code> and <code>.space-between</code> to
           equally space out elements horizontally.
@@ -76,6 +88,8 @@
       </section>
 
       <section class="vsp">
+        <h2>Grid</h2>
+        <p>Below are some classes for creating grid.</p>
         <h4>Flexible Grid</h4>
         <div class="flexible-grid grid-gallery">
           <div class="box"></div>
@@ -95,6 +109,62 @@
           <div class="box"></div>
           <div class="box"></div>
         </div>
+      </section>
+
+      <section class="vsp">
+        <h2>Elements</h2>
+        <p>Below are a list of html elements and how they appear on the page with base styles.</p>
+        <n4>Tables</n4>
+        <table class="table theme1">
+          <thead>
+            <tr>
+              <th>Person</th>
+              <th>Number</th>
+              <th>Third Column</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Someone Lastname</td>
+              <td>900</td>
+              <td>Nullam quis risus eget urna mollis ornare vel eu leo.</td>
+            </tr>
+            <tr>
+              <td><a href="#">Person Name</a></td>
+              <td>1200</td>
+              <td>
+                Vestibulum id ligula porta felis euismod semper. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </td>
+            </tr>
+            <tr>
+              <td>Another Person</td>
+              <td>1500</td>
+              <td>
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </td>
+            </tr>
+            <tr>
+              <td>Last One</td>
+              <td>2800</td>
+              <td>
+                Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                Cras mattis consectetur purus sit amet fermentum.
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Footer content 1</td>
+              <td>Footer content 2</td>
+              <td>footer content 3</td>
+            </tr>
+          </tfoot>
+          <caption>
+            Table 1.2: Showing an example of table theme 1
+          </caption>
+        </table>
       </section>
     </main>
   </body>
