@@ -1,4 +1,3 @@
-/* layout helpers */
 .h100 {
   height: 100%;
 }
@@ -7,8 +6,8 @@
   padding: var(--m-space2);
 }
 
-.pad--relaxed {
-  padding: var(--m-space4);
+.pad3 {
+  padding: var(--m-space3);
 }
 
 .pt {
@@ -111,19 +110,9 @@
   justify-content: space-between;
 }
 
-/* Equally space out elements vertically. */
-.section > *:nth-last-child(n + 2),
-.vsp > *:nth-last-child(n + 2),
-.vsp--2 > *:nth-last-child(n + 2),
-.eqvspace > *:nth-last-child(n + 2),
-.eqvspace--2 > *:nth-last-child(n + 2) {
+.section:not(:last-child),
+.veq:not(:last-child) {
   margin-bottom: var(--m-space2);
-}
-
-.section--4 > *:nth-last-child(n + 2),
-.vsp--4 > *:nth-last-child(n + 2),
-.eqvspace--4 > *:nth-last-child(n + 2) {
-  margin-bottom: var(--m-space4);
 }
 
 .flex1 {

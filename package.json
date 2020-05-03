@@ -5,12 +5,16 @@
   "license": "MIT",
   "scripts": {
     "css": "bash css.sh && cleancss -o dist/modern.min.css dist/modern.css",
-    "cssw": "nodemon --exec bash ./css.sh --watch src -e css"
+    "cssw": "nodemon --exec bash ./css.sh --watch src -e css",
+    "wp": "webpack -p"
   },
   "dependencies": {
     "minireset.css": "^0.0.6"
   },
   "devDependencies": {
-    "clean-css-cli": "^4.3.0"
+    "clean-css-cli": "^4.3.0",
+    "glob": "^7.1.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
