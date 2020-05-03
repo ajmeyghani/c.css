@@ -1,9 +1,16 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const glob = require("glob");
 
 module.exports = {
   mode: "development",
-  entry: "./src/modern.css",
+  entry: {
+    "modern.css": [
+      "minireset.css/minireset.css",
+      "./src/header.css",
+      ...glob.sync("./src/**/*.css", { ignore: "./src/header.css" }),
+    ],
+  },
   output: {
     path: path.resolve("build"),
   },

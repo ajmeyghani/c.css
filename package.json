@@ -7,7 +7,8 @@
     "css": "bash css.sh && cleancss -o dist/modern.min.css dist/modern.css",
     "cssw": "nodemon --exec bash ./css.sh --watch src -e css",
     "wp": "webpack -p",
-    "wpd": "webpack"
+    "wpd": "webpack",
+    "dbuild": "rm -rf build && yarn wpd"
   },
   "dependencies": {
     "mini-css-extract-plugin": "^0.9.0",
