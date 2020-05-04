@@ -8,7 +8,7 @@ module.exports = {
     "modern.css": [
       "minireset.css/minireset.css",
       "./src/header.css",
-      ...glob.sync("./src/**/*.css", { ignore: "./src/header.css" }),
+      ...glob.sync("./src/**/*.css", { ignore: "./src/**/header.css" }),
     ],
   },
   output: {
@@ -29,8 +29,6 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              // you can specify a publicPath here
-              // by default it uses publicPath in webpackOptions.output
               publicPath: ".",
             },
           },
