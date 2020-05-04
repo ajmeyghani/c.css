@@ -4,8 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "css": "bash css.sh && cleancss -o dist/modern.min.css dist/modern.css",
-    "cssw": "nodemon --exec bash ./css.sh --watch src -e css",
     "wp": "webpack -p",
     "wpd": "webpack",
     "dbuild": "rm -rf build && yarn wpd"
@@ -15,7 +13,6 @@
     "minireset.css": "^0.0.6"
   },
   "devDependencies": {
-    "clean-css-cli": "^4.3.0",
     "css-loader": "^3.5.3",
     "esm": "^3.2.25",
     "glob": "^7.1.6",

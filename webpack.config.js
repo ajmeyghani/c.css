@@ -21,6 +21,7 @@ module.exports = {
       ignoreOrder: true,
     }),
   ],
+
   module: {
     rules: [
       {
