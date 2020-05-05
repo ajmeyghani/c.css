@@ -27,6 +27,8 @@
 }
 
 /* Table Theme 1 */
+/* need to rethink the theme idea here, should it be styles? */
+/* if themes means colors, then styles means different variations ?*/
 .table.theme1 {
   border: 1px solid var(--m-gray);
   border-width: 1px 0 0 1px;
