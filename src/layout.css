@@ -72,40 +72,28 @@
   width: 100%;
 }
 
-.df,
 .flex {
   display: flex;
 }
 
-.fc,
-.fdc,
-.fcol,
 .flex-col {
   display: flex;
   flex-direction: column;
 }
 
-.fr,
-.fdr,
-.frow,
 .flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.ac,
-.aic,
-.acenter {
+.align-center {
   align-items: center;
 }
 
-.jc,
-.jcc,
-.jcenter {
+.justify-center {
   justify-content: center;
 }
 
-.jcsb,
 .space-between {
   justify-content: space-between;
 }
