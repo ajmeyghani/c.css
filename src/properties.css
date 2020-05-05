@@ -1,0 +1,55 @@
+/**
+ * SPACING PROPERTIES
+ * -------------------
+ * Custom properties defining consistent
+ * values for spacing, for example margins and paddings.
+ */
+body {
+  --sp1: 0.5rem;
+  --sp2: calc(var(--sp1) * 2);
+  --sp3: calc(var(--sp1) * 3);
+  --sp4: calc(var(--sp1) * 4);
+
+  /**
+  * `default-space` defines the default space value for the
+  * majority of margins and paddings.
+  */
+  --default-space: var(--sp2);
+}
+
+/**
+ * COLORS AND THEME SYSTEM
+ * -----------------------
+ * Custom properties defining colors. For the most
+ * part they define hooks for components for creating
+ * different color variations.
+ */
+body {
+  /* base b/w colors */
+  --black-color: #000;
+  --white-color: #fff;
+
+  /**
+   *  Going to need the theme color hooks:
+   *   `primary-color`
+   *   `secondary-color`
+   *   `success-color`
+   *   `failure-color`
+   *   `warning-color`
+   *   `info-color`
+   *   `gray-color`
+   *
+   * For each color, need different variations, dark to lightest:
+   *
+   * primary-color0: dark
+   * primary-color: base
+   * primary-color1: 1x lighter
+   * primary-color2: 2x lighter
+   * primary-color3: 3x lighter
+   *
+   * In addition for every property, need to have the hsl values
+   * defined separately for more control. For example:
+   *
+   * primary-color0-h, primary-color0-s, primary-color0-l
+   */
+}

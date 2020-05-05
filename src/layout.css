@@ -1,70 +1,22 @@
-.h100 {
-  height: 100%;
-}
-
-.pad {
-  padding: var(--m-space2);
-}
-
-.pad3 {
-  padding: var(--m-space3);
-}
-
-.pt {
-  padding-top: var(--m-space);
-}
-
-.pb {
-  padding-bottom: var(--m-space);
-}
-
-.pbt,
-.ptb {
-  padding-top: var(--m-space);
-  padding-bottom: var(--m-space);
-}
-
-.pl { padding-left: var(--m-space) }
-.pr { padding-right: var(--m-space) }
-.plf, .prl {
-  padding-left: var(--m-space);
-  padding-right: var(--m-space);
-}
-
-.mt {
-  margin-top: var(--m-space);
-}
-
-.mb {
-  margin-bottom: var(--m-space);
-}
-
-.m,
-.margin {
-  margin: var(--m-space);
-}
-
-.mbt,
-.mtb {
-  margin-top: var(--m-space);
-  margin-bottom: var(--m-space);
-}
-
-.grid,
-.dg {
-  display: grid;
-}
-
+/**
+ * Generic flexible grid useful for auto resizing grids.
+ * @custom-properties:
+ *  - cell-min-width: default 17rem, defines the min width for each grid cell
+ *  - row-height: default 5rem, defines the height of each cell
+ *  - grow-type: default auto-fit, defines how the cells should stretch
+ *    to fill extra space.
+ */
 .flexible-grid {
-  --m-flexible-cell-min-width: 17rem;
-  --m-flexible-row-height: 5rem;
+  --cell-min-width: 17rem;
+  --row-height: 5rem;
+  --grow-type: auto-fit;
   display: grid;
   grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--m-flexible-cell-min-width), 1fr)
+    var(--grow-type),
+    minmax(var(--cell-min-width), 1fr)
   );
   grid-gap: var(--m-space);
-  grid-auto-rows: var(--m-flexible-row-height);
+  grid-auto-rows: var(--row-height);
   align-items: stretch;
 }
 
@@ -72,41 +24,96 @@
   width: 100%;
 }
 
-.flex {
+/**
+ * Vertical/horizontal centering:
+ *
+ * - `center-v`: vertical center children elements;
+ * - `center-h`: horizontally center child elements;
+ *
+ * Example:
+ *
+ * The example below vertically centers all the children
+ * elements.
+ *
+ * ```html
+ *<div class="center-v">
+ *  <span>item</span>
+ *  <span>item2</span>
+ *</div>
+ * ```
+ */
+
+[class^="center" i] {
   display: flex;
 }
 
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.align-center {
+.center-v {
   align-items: center;
 }
 
-.justify-center {
+.center-h {
   justify-content: center;
 }
 
-.space-between {
-  justify-content: space-between;
+/**
+ * Set margin bottom to all children elements of a container
+ * to space them vertically. For example useful for adding a
+ * margin bottom to all paragraphs inside a container.
+ */
+
+[class^="space-v" i] {
+  --space-v__value: var(--default-space);
 }
 
-.section:not(:last-child),
-.veq:not(:last-child) {
-  margin-bottom: var(--m-space2);
+[class^="space-v" i] > *:not(:last-child) {
+  margin-bottom: var(--space-v__value);
 }
 
-.flex1 {
+[class^="space-v" i][class*="md" i] {
+  --space-v__value: var(--sp4);
+}
+
+/**
+ * Same as space-v but for equally spacing children elements
+ * horizontally.
+ *
+ * - base class: `space-h`
+ *
+ * - modifiers:
+ *
+ *    - `md`
+ *    - `wrap`
+ *
+ * - possible combinations:
+ *
+ * - `space-h`: spaces elements horizontally with equal spaces between;
+ * - `space-h--md`: same as above but with larger margin value;
+ * - `space-h--wrap`: wraps the elements;
+ * - `space-h--md-wrap`: combines the two above;
+ *
+ * Note that the `--` is optional, you can do `space-h-md-wrap`, but it
+ * is nicer to stick to BEM modifier convention and use `--`.
+ */
+
+[class^="space-h" i] {
   display: flex;
+  flex-direction: row;
+  --space-h__value: var(--default-space);
 }
 
-.flex1 > * {
-  flex: 1;
+[class^="space-h" i] > *:not(:last-child) {
+  margin-right: var(--space-h__value);
+}
+
+[class^="space-h" i][class*="md" i] {
+  --space-h__value: var(--sp4);
+}
+
+[class^="space-h" i][class*="wrap"] {
+  flex-wrap: wrap;
+}
+
+[class^="space-h" i][class*="wrap"] > *:not(:last-child) {
+  flex-wrap: wrap;
+  margin-bottom: var(--space-h__value);
 }

@@ -4,6 +4,7 @@ const glob = require("glob");
 
 module.exports = {
   mode: "development",
+  devtool: "source-map",
   entry: {
     "modern.css": [
       "minireset.css/minireset.css",
