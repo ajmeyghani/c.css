@@ -66,3 +66,8 @@ Below are the frequently used combinations:
 - `.arrange--sv-ch`: horizontally center children, while stacked vertically
 - `.arrange--sv-ch-cv`: horizontally and vertically center children, while stacked vertically
 
+**Distributing**
+
+- `.arrange--dist`: distributes children equally, while stacked horizontally
+- `.arrange--sh-dist`: same as above
+- `.arrange--sv-dist`: distribute children equally, whilte stacked vertically

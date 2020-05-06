@@ -1,5 +1,6 @@
 [class*="arrange"] {
   display: flex;
+  width: 100%;
 }
 
 /* stacking */
@@ -36,4 +37,10 @@
 [class*="arrange--" i][class*="cv" i][class*="ch" i] {
   justify-content: center;
   align-items: center;
+}
+
+/* distributing */
+[class*="arrange--" i][class*="dist" i],
+[class*="arrange--" i][class*="sh" i][class*="dist" i] {
+  justify-content: space-between
 }
