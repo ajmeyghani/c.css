@@ -44,3 +44,19 @@
 [class*="arrange--" i][class*="sh" i][class*="dist" i] {
   justify-content: space-between
 }
+
+/* wrap */
+[class*="arrange--" i][class*="wrap"],
+[class*="arrange--" i][class*="sh"][class*="wrap"] {
+  flex-wrap: wrap;
+  align-items: center;
+  --arrange-gap: var(--default-space);
+}
+
+[class*="arrange--" i][class*="wrap"] > *:not(:last-child) {
+  margin-right: var(--arrange-gap);
+}
+
+[class*="arrange--" i][class*="wrap"] > * {
+  margin-bottom: var(--arrange-gap)
+}

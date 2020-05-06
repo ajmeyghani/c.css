@@ -11,15 +11,20 @@ body, html {
   margin: 0;
 }
 
-.box {
+[class*="box"] {
   width: 25px;
   height: 25px;
   background-color: #d0f6ff;
   border: 1px solid #66e2ff;
 }
 
+.box--lg {
+  width: 25%
+}
+
 .area {
-  height: 100px;
+  height: auto;
+  min-height: 5rem;
   background-color: white;
   border: 1px solid gray;
 }
