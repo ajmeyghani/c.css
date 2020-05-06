@@ -1,0 +1,29 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 1rem;
+  margin: 0;
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  background-color: #d0f6ff;
+  border: 1px solid #66e2ff;
+}
+
+.area {
+  height: 100px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.space-v > *:not(:last-child) {
+  margin-bottom: 1rem
+}
