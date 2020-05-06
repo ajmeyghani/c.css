@@ -1,11 +1,34 @@
-/**
- * Generic flexible grid useful for auto resizing grids.
- * @custom-properties:
- *  - cell-min-width: default 17rem, defines the min width for each grid cell
- *  - row-height: default 5rem, defines the height of each cell
- *  - grow-type: default auto-fit, defines how the cells should stretch
- *    to fill extra space.
- */
+/*
+@styleguide
+@title flexible-grid
+
+### Summary
+
+Generic flexible grid useful for creating auto-resizable grid layouts.
+
+### Example
+
+```html
+<div class="flexible-grid">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+```
+
+<div class="flexible-grid">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+### custom-properties:
+
+- `--cell-min-width`: default 17rem, defines the min width for each grid cell
+- `--row-height`: default 5rem, defines the height of each cell
+- `--grow-type`: default auto-fit, defines how the cells should stretch
+   to fill extra space.
+*/
 .flexible-grid {
   --cell-min-width: 17rem;
   --row-height: 5rem;

@@ -1,0 +1,39 @@
+[class*="arrange"] {
+  display: flex;
+}
+
+/* stacking */
+[class*="arrange"],
+[class*="arrange--" i][class*="sh" i] {
+  flex-direction: row;
+}
+
+[class*="arrange--" i][class*="sv" i] {
+  flex-direction: column;
+}
+
+/* centering */
+[class*="arrange--" i][class*="cv" i],
+[class*="arrange--" i][class*="sh" i][class*="cv" i] {
+  align-items: center;
+}
+
+[class*="arrange--" i][class*="ch" i],
+[class*="arrange--" i][class*="sh" i][class*="ch" i] {
+  justify-content: center;
+}
+
+[class*="arrange--" i][class*="sv" i][class*="cv" i] {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+[class*="arrange--" i][class*="sv" i][class*="ch" i] {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+[class*="arrange--" i][class*="cv" i][class*="ch" i] {
+  justify-content: center;
+  align-items: center;
+}
