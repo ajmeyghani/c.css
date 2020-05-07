@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-/* stacking */
+/* Stacking */
 [class*="arrange"],
 [class*="arrange--" i][class*="sh" i] {
   flex-direction: row;
@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 
-/* centering */
+/* Centering */
 [class*="arrange--" i][class*="cv" i],
 [class*="arrange--" i][class*="sh" i][class*="cv" i] {
   align-items: center;
@@ -39,13 +39,13 @@
   align-items: center;
 }
 
-/* distributing */
+/* Distributing */
 [class*="arrange--" i][class*="dist" i],
 [class*="arrange--" i][class*="sh" i][class*="dist" i] {
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-/* wrap */
+/* Wrapping */
 [class*="arrange--" i][class*="wrap"],
 [class*="arrange--" i][class*="sh"][class*="wrap"] {
   flex-wrap: wrap;
@@ -58,5 +58,5 @@
 }
 
 [class*="arrange--" i][class*="wrap"] > * {
-  margin-bottom: var(--arrange-gap)
+  margin-bottom: var(--arrange-gap);
 }
