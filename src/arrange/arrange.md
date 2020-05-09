@@ -1,31 +1,4 @@
-# c.css
-
-Writing raw css feels like writing assembly, you have to know a lot of
-specific details to get things to work. This library provides
-just enough abstractions to simplify creating layouts, defining color systems,
-styling elements, and more.
-
-## Install
-
-`yarn add @ajmey/c.css`
-
-## Import
-
-```html
-<link rel="stylesheet" href="/node_modules/@ajmey/c.css/c.min.css">
-```
-
-or import if you are using a bundler like Webpack:
-
-```js
-@import "@ajmey/c.css";
-```
-
-## Usage
-
-### Layout
-
-#### Arranging Elements
+# `.arrange`
 
 The main class used for arranging elements is `.arrange`. You can do things like:
 
@@ -33,7 +6,7 @@ The main class used for arranging elements is `.arrange`. You can do things like
 - center children horizontally/vertically
 - distribute children equally horizontally/vertically
 
-##### API
+## API
 
 The arrange class has the following form, where `m` is a modifier:
 

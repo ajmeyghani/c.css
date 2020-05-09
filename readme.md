@@ -1,30 +1,27 @@
-# modern.css
+# c.css
 
-A modern CSS framework for modern browsers.
+## `Work In Progress!`
 
-> Work In Progress, not ready for production.
+Writing raw css feels like writing assembly, you have to know a lot of
+specific details to get things to work. This library provides
+just enough abstractions to simplify creating layouts, defining color systems, styling elements, and more.
 
 ## Install
 
-- `yarn add @ajmey/modern.css` or `npm i @ajmey/modern.css -S`.
-- Then, include the bundle located at `node_modules/@ajmey/modern.css/index.css`
+`yarn add @ajmey/c.css`
 
-## Docs
+## Import
 
-### Helper Layout Classes
+```html
+<link rel="stylesheet" href="/node_modules/@ajmey/c.css/c.min.css">
+```
 
-- `flex`: sets display to flex
-- `flex-col`: sets `display-direction` to column.
-- `flex-row`: sets `display-direction` to row.
-- `align-items-center` or `aic`: sets `align-items` to `center`.
-- `justify-content-center` or `jcc`: sets `justify-content` to `center`.
-- `h100`: sets height to 100%.
-- `flexible-grid`: when set on a parent, it will create a grid with auto-fit set as repeat. The following custom properties can be set:
-    - `--m-flexible-cell-min-width`, default: `17rem`;
-    - `--m-flexible-row-height`, default: `15rem`;
+or import if you are using a bundler like Webpack:
 
-## Examples
+```js
+@import "@ajmey/c.css";
+```
 
-- If you want to vertically center children of a container, add `flex-row aic` classes on the parent container.
+## TODO
 
-
+- [ ] Content Mode, add .content to the body and get margins on h1..h6, and content elements
