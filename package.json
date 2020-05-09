@@ -1,7 +1,7 @@
 {
-  "name": "ajmey-css",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@ajmey/c.css",
+  "version": "0.0.1",
+  "main": "c.css",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf build",
