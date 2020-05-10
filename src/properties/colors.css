@@ -1,0 +1,29 @@
+body {
+  /* base b/w colors */
+  --black: #000;
+  --white: #fff;
+
+  /**
+   *  Going to need the theme color hooks:
+   *   `primary`
+   *   `secondary`
+   *   `success`
+   *   `failure`
+   *   `warning`
+   *   `info`
+   *   `gray`
+   *
+   * For each color, need different variations, dark to lightest:
+   *
+   * primary0: dark
+   * primary: base
+   * primary1: 1x lighter
+   * primary2: 2x lighter
+   * primary3: 3x lighter
+   *
+   * In addition for every property, need to have the hsl values
+   * defined separately for more control. For example:
+   *
+   * primary0-h, primary0-s, primary0-l
+   */
+}

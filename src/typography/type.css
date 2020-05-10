@@ -56,18 +56,18 @@ figcaption {
 
 fieldset {
   line-height: 1.9375rem;
-  padding: var(--m-space1);
-  border: 1px solid #bbb;
+  padding: var(--sp1);
+  border: 1px solid var(--gray);
   border-radius: 2px;
 }
 
 blockquote {
-  border-left: 4px solid var(--m-gray1);
-  padding-left: var(--m-space);
+  border-left: 4px solid var(--gray);
+  padding-left: var(--default-space);
 }
 
 code {
-  background-color: var(--m-gray2);
+  background-color: var(--gray2);
   padding: 0
 }
 
