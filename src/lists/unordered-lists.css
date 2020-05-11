@@ -1,0 +1,21 @@
+ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+ul {
+  margin-left: 0;
+}
+
+ul ul {
+  margin-left: var(--space-x2); /* need 1.5rem */
+}
+
+ul ol ul {
+  margin-left: 0;
+}
+
+ul > li:before {
+  content: "";
+  margin-right: -6px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="docs-body">
+
+    <section>
+      <ul>
+        <li>
+          Unordered List item one
+          <ul>
+            <li>
+              Nested list item
+              <ul>
+                <li>Level 3, item one</li>
+                <li>Level 3, item two</li>
+                <li>Level 3, item three</li>
+                <li>Level 3, item four</li>
+              </ul>
+            </li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+          </ul>
+        </li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+      </ul>
+    </section>
+
+    <section>
+      <ol>
+        <li>
+          List item one
+          <ol>
+            <li>
+              List item one
+              <ol>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+                <li>List item four</li>
+              </ol>
+            </li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+          </ol>
+        </li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+      </ol>
+    </section>
+
+    <section>
+      <ul>
+        <li>
+          BulletX
+          <ol>
+            <li>Bullet x1</li>
+            <li>Bullet x2</li>
+            <li>
+              Bullet x3
+              <ol>
+                <li>Bullet x3.1</li>
+                <li>
+                  Bullet x3.2
+                  <ul>
+                    <li>Bullet x3.2 Sub a</li>
+                    <li>Bullet x3.2 Sub b</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          BulletY
+          <ul>
+            <li>BulletY, a</li>
+            <li>BulletY, b</li>
+            <li>
+              BulletY, c
+              <ul>
+                <li>
+                  BulletYC Items
+                  <ol>
+                    <li>BulletY c1</li>
+                    <li>BulletY c2</li>
+                  </ol>
+                </li>
+                <li>Bullet YC More</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          BulletZ
+          <ol>
+            <li>BulletZ 1</li>
+            <li>BulletZ 2</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <dl>
+        <dt>Definition List Title</dt>
+        <dd>Definition list division.</dd>
+        <dt>Kitchen Sink</dt>
+        <dd>
+          Used in expressions to describe work in which all conceivable (and
+          some inconceivable) sources have been mined. In this case, a bunch
+          of markup.
+        </dd>
+        <dt>aside</dt>
+        <dd>Defines content aside from the page content</dd>
+        <dt>blockquote</dt>
+        <dd>Defines a section that is quoted from another source</dd>
+      </dl>
+    </section>
+
+    <button id="toggle-grid-button">Toggle Grid</button>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        function toggleGrid() {
+          document.body.classList.toggle("vertical-grid");
+        }
+
+        window.toggleGrid = toggleGrid;
+
+        document
+          .querySelector("#toggle-grid-button")
+          .addEventListener("click", toggleGrid);
+      });
+    </script>
+
+  </body>
+</html>

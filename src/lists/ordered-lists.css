@@ -1,0 +1,37 @@
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table; /* MAGIC: for lining up numbers column. */
+  counter-increment: item 1;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: var(--space-half);
+}
+
+/* Nested Ordered Lists */
+li ol {
+  counter-reset: item;
+}
+
+ol li ol {
+  margin-left: 0;
+}
+
+ul ol {
+  margin-left: var(--space-x2); /* need 1.5rem */
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") ".";
+}

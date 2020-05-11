@@ -1,8 +1,7 @@
 .border-bottom {
-  border-bottom: 1px solid;
-  padding-bottom: var(--m-space);
+  border-bottom: 1px solid currentcolor;
 }
 
 .border {
-  border: 1px solid var(--m-black);
+  border: 1px solid var(--fg);
 }

@@ -1,13 +1,12 @@
 html {
-  --base-font-size: 16px;
   font-size: var(--base-font-size);
   line-height: 1;
-  color: var(--color-fg);
+  color: var(--fg);
 }
 
 body {
   font-size: 1.05rem;
-  line-height: 2rem;
+  line-height: var(--space-x2);
   font-weight: 100;
 }
 
@@ -63,7 +62,7 @@ fieldset {
 
 blockquote {
   border-left: 4px solid var(--gray);
-  padding-left: var(--default-space);
+  padding-left: var(--space);
 }
 
 code {

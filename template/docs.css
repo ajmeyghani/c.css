@@ -2,10 +2,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.page {
+.docs-body {
   max-width: 1024px;
-  margin: 0 auto;
-  padding: var(--m-space);
+  margin: var(--space) auto;
+  border: 1px solid var(--gray);
 }
 
 .vertical-grid {
@@ -32,15 +32,15 @@ body {
 }
 
 body.vertical-grid *:not(hr) {
-  background-color: rgba(169, 118, 158, 0.13) !important;
+  background-color: rgba(0, 0, 0, 0.18) !important;
 }
 
 #toggle-grid-button {
   background: none;
   border: 1px solid;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 3px;
+  padding: 5px;
+  position: fixed;
+  top: 1rem; right: 1rem
 }
 
 [class*="box"] {
@@ -61,7 +61,7 @@ body.vertical-grid *:not(hr) {
   border: 1px solid gray;
 }
 
-section > *:not(:last-child),
-.section > *:not(:last-child) {
-  margin-bottom: 1rem;
+.sections {
+  display: grid;
+  grid-gap: var(--space)
 }

@@ -66,11 +66,29 @@ module.exports = {
       chunks: ["c", "docs"]
     }),
     new HtmlWebpackPlugin({
-      title: "c.css -- arrange",
+      title: "c.css -- Arrange",
       filename: "public/arrange.html",
       template: "template/arrange.tpl.html",
       chunks: ["core", "arrange", "docs"]
-    })
+    }),
+    new HtmlWebpackPlugin({
+      title: "c.css -- Content Mode",
+      filename: "public/content-mode.html",
+      template: "template/content-mode.tpl.html",
+      chunks: ["core", "modes", "docs"]
+    }),
+    new HtmlWebpackPlugin({
+      title: "c.css--lists",
+      filename: "public/lists.html",
+      template: "template/lists.tpl.html",
+      chunks: ["core", "typography", "lists", "docs"]
+    }),
+    new HtmlWebpackPlugin({
+      title: "c.css--typography",
+      filename: "public/typography.html",
+      template: "template/typography.tpl.html",
+      chunks: ["core", "typography", "docs"]
+    }),
   ],
 
 };

@@ -50,7 +50,7 @@
 [class*="arrange--" i][class*="sh"][class*="wrap"] {
   flex-wrap: wrap;
   align-items: center;
-  --arrange-gap: var(--default-space);
+  --arrange-gap: var(--space);
 }
 
 [class*="arrange--" i][class*="wrap"] > *:not(:last-child) {

@@ -1,34 +1,4 @@
-/*
-@styleguide
-@title flexible-grid
-
-### Summary
-
-Generic flexible grid useful for creating auto-resizable grid layouts.
-
-### Example
-
-```html
-<div class="flexible-grid">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-```
-
-<div class="flexible-grid">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-
-### custom-properties:
-
-- `--cell-min-width`: default 17rem, defines the min width for each grid cell
-- `--row-height`: default 5rem, defines the height of each cell
-- `--grow-type`: default auto-fit, defines how the cells should stretch
-   to fill extra space.
-*/
+/* flexible grid */
 .flexible-grid {
   --cell-min-width: 17rem;
   --row-height: 5rem;
@@ -47,81 +17,27 @@ Generic flexible grid useful for creating auto-resizable grid layouts.
   width: 100%;
 }
 
-/**
- * Vertical/horizontal centering:
- *
- * - `center-v`: vertical center children elements;
- * - `center-h`: horizontally center child elements;
- *
- * Example:
- *
- * The example below vertically centers all the children
- * elements.
- *
- * ```html
- *<div class="center-v">
- *  <span>item</span>
- *  <span>item2</span>
- *</div>
- * ```
- */
 
-[class^="center" i] {
-  display: flex;
+
+/* .space */
+.space--v {
+  --space--v__value: var(--space);
 }
 
-.center-v {
-  align-items: center;
+.space--v > *:not(:last-child) {
+  margin-bottom: var(--space--v__value);
 }
 
-.center-h {
-  justify-content: center;
+.space--v.md {
+  --space--v__value: var(--sp4);
 }
 
-/**
- * Set margin bottom to all children elements of a container
- * to space them vertically. For example useful for adding a
- * margin bottom to all paragraphs inside a container.
- */
 
-[class^="space-v" i] {
-  --space-v__value: var(--default-space);
-}
-
-[class^="space-v" i] > *:not(:last-child) {
-  margin-bottom: var(--space-v__value);
-}
-
-[class^="space-v" i][class*="md" i] {
-  --space-v__value: var(--sp4);
-}
-
-/**
- * Same as space-v but for equally spacing children elements
- * horizontally.
- *
- * - base class: `space-h`
- *
- * - modifiers:
- *
- *    - `md`
- *    - `wrap`
- *
- * - possible combinations:
- *
- * - `space-h`: spaces elements horizontally with equal spaces between;
- * - `space-h--md`: same as above but with larger margin value;
- * - `space-h--wrap`: wraps the elements;
- * - `space-h--md-wrap`: combines the two above;
- *
- * Note that the `--` is optional, you can do `space-h-md-wrap`, but it
- * is nicer to stick to BEM modifier convention and use `--`.
- */
-
+/* space-h */
 [class^="space-h" i] {
   display: flex;
   flex-direction: row;
-  --space-h__value: var(--default-space);
+  --space-h__value: var(--space);
 }
 
 [class^="space-h" i] > *:not(:last-child) {

@@ -1,7 +1,0 @@
-body {
-  --sp1: 0.5rem;
-  --sp2: calc(var(--sp1) * 2);
-  --sp3: calc(var(--sp1) * 3);
-  --sp4: calc(var(--sp1) * 4);
-  --default-space: var(--sp2);
-}

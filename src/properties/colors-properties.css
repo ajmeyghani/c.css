@@ -12,6 +12,8 @@ body {
    *   `warning`
    *   `info`
    *   `gray`
+   *   `fg`
+   *   `bg`
    *
    * For each color, need different variations, dark to lightest:
    *
@@ -26,4 +28,16 @@ body {
    *
    * primary0-h, primary0-s, primary0-l
    */
+}
+
+body {
+  --gray: gray;
+}
+
+body {
+  --fg: var(--black);
+}
+
+body.inverted-colors {
+  --fg: var(--white);
 }
