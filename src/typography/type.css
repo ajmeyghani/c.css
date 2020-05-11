@@ -1,52 +1,68 @@
 html {
   font-size: var(--base-font-size);
-  line-height: 1;
   color: var(--fg);
 }
 
-body {
-  font-size: 1.05rem;
-  line-height: var(--space-x2);
-  font-weight: 100;
+.serif, .serif > * {
+  font-family: "times", serif;
 }
 
-small {
-  font-weight: 1rem;
+body {
+  font-size: var(--body-font-size);
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+
+small, .small,  .small > * {
+  font-size: 0.75rem;
   line-height: 1rem;
 }
 
 p {
-  font-weight: 100;
+  font-size: var(--body-font-size);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-h1 {
-  font-size: 3.1rem;
-  line-height: 3rem;
-}
-
-h2 {
-  font-size: 2.4rem;
-  line-height: 2.9375rem;
-}
-
-h3 {
-  font-size: 2rem;
+h1, h2, h3, h4 {
   line-height: 2rem;
 }
 
+h5, h6 {
+  line-height: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
 h4 {
-  font-size: 1.6rem;
-  line-height: 2.0625rem;
+  font-size: 1.4rem;
 }
 
 h5 {
-  font-size: 1.5rem;
-  line-height: 0.875rem;
+  font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 1.3rem;
-  line-height: 1.0625rem;
+  font-size: 1rem;
+}
+
+a, .link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover, .link:hover {
+  text-decoration: underline;
 }
 
 figcaption {
@@ -73,3 +89,5 @@ code {
 .strong {
   font-weight: 400;
 }
+
+

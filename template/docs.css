@@ -5,7 +5,8 @@ body {
 .docs-body {
   max-width: 1024px;
   margin: var(--space) auto;
-  border: 1px solid var(--gray);
+  padding: var(--space);
+  /*border: 1px solid var(--gray);*/
 }
 
 .vertical-grid {
@@ -61,7 +62,24 @@ body.vertical-grid *:not(hr) {
   border: 1px solid gray;
 }
 
-.sections {
+[class*="sections"] {
   display: grid;
   grid-gap: var(--space)
 }
+
+.sections-half {
+  grid-gap: var(--space-half);
+}
+
+.sections--x2 {
+  grid-gap: var(--space-x2);
+}
+
+.sections--x3 {
+  grid-gap: var(--space-x3);
+}
+
+.sections--x4 {
+  grid-gap: var(--space-x4);
+}
+
