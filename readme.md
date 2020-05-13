@@ -29,6 +29,7 @@ The API documentation is available in the [docs](./docs) folder.
 ## TODO
 
 - [ ] Content Mode, add .content to the body and get margins on h1..h6, and content elements
-- [ ] Define style hooks for components
+- [ ] Define style hooks (interfaces) for components
 - [ ] Define color system
 - [ ] Define hook for vertical rhythm
+- [ ] Showcase examples, demonstrating possibilities
