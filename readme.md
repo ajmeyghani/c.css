@@ -4,7 +4,7 @@
 
 Writing raw css feels like writing assembly, you have to know a lot of
 specific details to get things to work. This library provides
-just enough abstractions to simplify creating layouts, defining color systems, styling elements, and more.
+just enough abstractions to help simplify creating layouts, defining color systems, styling elements, and more.
 
 ## Install
 
@@ -29,3 +29,6 @@ The API documentation is available in the [docs](./docs) folder.
 ## TODO
 
 - [ ] Content Mode, add .content to the body and get margins on h1..h6, and content elements
+- [ ] Define style hooks for components
+- [ ] Define color system
+- [ ] Define hook for vertical rhythm
