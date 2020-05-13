@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="read-mode">
   <head>
     <meta charset="UTF-8" />
     <link
@@ -13,17 +13,38 @@
           document.body.classList.toggle("vertical-grid");
         }
 
+        function readMode() {
+          const root = document.getElementsByTagName("html")[0];
+          root.classList.toggle("read-mode");
+        }
+
+        function toggleFont() {
+          document.body.classList.toggle("serif");
+        }
+
         window.toggleGrid = toggleGrid;
 
         document
           .querySelector("#toggle-grid-button")
           .addEventListener("click", toggleGrid);
+
+        document
+          .querySelector("#toggle-read-mode")
+          .addEventListener("click", readMode);
+
+        document
+          .querySelector("#toggle-font")
+          .addEventListener("click", toggleFont);
       });
     </script>
   </head>
   <body class="docs-body sections--x2 vertical-grid serif">
 
     <button id="toggle-grid-button">Toggle Grid</button>
+
+    <button id="toggle-read-mode">Toggle Read Mode</button>
+
+    <button id="toggle-font">Toggle Font</button>
 
     <section class="sections">
       <h1>Heading</h1>

@@ -2,6 +2,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+html.read-mode {
+  --base-font-size: 22px;
+}
+
 .docs-body {
   max-width: 1024px;
   margin: var(--space) auto;
@@ -29,7 +33,7 @@ body {
 .vertical-grid::after {
   top: 0;
   background: linear-gradient(rgb(0, 173, 255) 1px, transparent 1px) left top /
-    1px var(--base-font-size);
+  1px var(--base-font-size);
 }
 
 body.vertical-grid *:not(hr) {
@@ -42,6 +46,22 @@ body.vertical-grid *:not(hr) {
   padding: 5px;
   position: fixed;
   top: 1rem; right: 1rem
+}
+
+#toggle-read-mode {
+ background: none;
+ border: 1px solid;
+ padding: 5px;
+ position: fixed;
+ top: 3rem; right: 1rem
+}
+
+#toggle-font {
+ background: none;
+ border: 1px solid;
+ padding: 5px;
+ position: fixed;
+ top: 5rem; right: 1rem
 }
 
 [class*="box"] {
