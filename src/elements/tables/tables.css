@@ -18,7 +18,7 @@
 
 .table caption {
   caption-side: bottom;
-  margin-top: var(--m-space);
+  margin-top: var(--space);
   line-height: 0.8;
 }
 
@@ -29,16 +29,16 @@
 /* need to rethink the theme idea here, should it be styles? */
 /* if themes means colors, then styles means different variations ?*/
 .table.theme1 {
-  border: 1px solid var(--m-gray);
+  border: 1px solid var(--gray);
   border-width: 1px 0 0 1px;
 }
 
 .table.theme1 tr {
-  border-bottom: 1px solid var(--m-gray);
+  border-bottom: 1px solid var(--gray);
 }
 
 .table.theme1 td,
 .table.theme1 th {
-  border-right: 1px solid var(--m-gray);
+  border-right: 1px solid var(--gray);
 }
 

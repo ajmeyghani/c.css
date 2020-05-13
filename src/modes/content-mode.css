@@ -3,10 +3,10 @@
 }
 
 .content-mode h1,
-.content-mode h1,
-.content-mode h1,
-.content-mode h1,
-.content-mode h1,
-.content-mode h1 {
+.content-mode h2,
+.content-mode h3,
+.content-mode h4,
+.content-mode h5,
+.content-mode h6 {
   margin-bottom: var(--space);
 }

@@ -5,13 +5,13 @@
  */
 
 html {
-  --PRIVATE_BASE_SPACE_VALUE: 1rem;
+  --PRIVATE_BASE_SPACE: 1rem;
 }
 
-body {
-  --space-half: calc(var(--PRIVATE_BASE_SPACE_VALUE) / 2);
-  --space: var(--PRIVATE_BASE_SPACE_VALUE);
-  --space-x2: calc(var(--PRIVATE_BASE_SPACE_VALUE) * 2);
-  --space-x3: calc(var(--PRIVATE_BASE_SPACE_VALUE) * 3);
-  --space-x4: calc(var(--PRIVATE_BASE_SPACE_VALUE) * 4);
+html {
+  --space-half: calc(var(--PRIVATE_BASE_SPACE) / 2);
+  --space: var(--PRIVATE_BASE_SPACE);
+  --space-x2: calc(var(--PRIVATE_BASE_SPACE) * 2);
+  --space-x3: calc(var(--PRIVATE_BASE_SPACE) * 3);
+  --space-x4: calc(var(--PRIVATE_BASE_SPACE) * 4);
 }

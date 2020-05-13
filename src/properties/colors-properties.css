@@ -31,7 +31,8 @@ body {
 }
 
 body {
-  --primary: red;
+  --primary-h: 250; --primary-s: 52%; --primary-l: 54%;
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
   --gray: gray;
 }
 

@@ -1,0 +1,19 @@
+[class*="space"][class*="-v"] > *:not(:last-child) {
+  margin-bottom: var(--space);
+}
+
+[class*="space"][class*="-v"][class*="-half"] > *:not(:last-child) {
+  margin-bottom: var(--space-half);
+}
+
+[class*="space"][class*="-v"][class*="-x2"] > *:not(:last-child) {
+  margin-bottom: var(--space-x2);
+}
+
+[class*="space"][class*="-v"][class*="-x3"] > *:not(:last-child) {
+  margin-bottom: var(--space-x3);
+}
+
+[class*="space"][class*="-v"][class*="-x4"] > *:not(:last-child) {
+  margin-bottom: var(--space-x4);
+}

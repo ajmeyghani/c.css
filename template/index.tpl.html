@@ -8,15 +8,18 @@
     />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
-    <main class="page space--v">
-      <section class="arrange--dist-cv border-bottom">
-        <h1>c.css</h1>
+  <body class="docs-body">
+    <main class="space-v">
+      <section
+        class="arrange-dist-cv border-bottom"
+        style="padding: var(--space) 0"
+      >
+        <h1>c.css - kitchen sink</h1>
         <button id="toggle-grid-button">Toggle Grid</button>
       </section>
 
       <section>
-        <hgroup class="space--v">
+        <hgroup class="space-v">
           <h1>h1</h1>
           <h2>h2</h2>
           <h3>h3</h3>
@@ -26,17 +29,18 @@
         </hgroup>
       </section>
 
-      <section class="space--v">
+      <section class="space-v">
         <nav>
           <ul>
-            <li><a href="/layout-helpers.html">Layout Helpers</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="/public/typography.html">Typography</a></li>
+            <li><a href="/public/arrange.html">Arrange</a></li>
+            <li><a href="/public/space.html">Space</a></li>
+            <li><a href="/public/content-mode.html">Content Mode</a></li>
+            <li><a href="/public/login.html">Login Page Example</a></li>
           </ul>
         </nav>
 
-        <article class="space--v">
+        <article class="space-v">
           <p>
             This paragraph is nested inside an article. It contains many
             different, sometimes useful,
@@ -54,9 +58,9 @@
         <footer>This is footer for this section</footer>
       </section>
 
-      <section class="space--v">
+      <section class="space-v">
         <h3>Random Facts</h3>
-        <div class="space--v">
+        <div class="space-v">
           <p>
             Naruto is a Japanese manga series written and illustrated by Masashi
             Kishimoto. It tells the story of a young ninja, Naruto Uzumaki, who
@@ -104,7 +108,7 @@
         </div>
       </section>
 
-      <section class="space--v">
+      <section class="space-v">
         <blockquote>
           <p>
             Blockquote: I quickly explained that many big jobs involve few
@@ -210,7 +214,7 @@
         </dl>
       </section>
 
-      <section class="space--v">
+      <section class="space-v">
         <h3>Basic Lists</h3>
         <ul>
           <li>
@@ -335,7 +339,7 @@ pre {
         >
       </section>
 
-      <figure class="space--v">
+      <figure class="space-v">
         <img src="/image.png" />
         <figcaption>
           Random image <a href="">link</a> to another page.
@@ -343,7 +347,7 @@ pre {
       </figure>
 
       <section>
-        <form class="space--v">
+        <form class="space-v">
           <p>
             <label for="example-input-email">Email address</label>
             <input

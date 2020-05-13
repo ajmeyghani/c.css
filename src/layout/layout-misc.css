@@ -1,0 +1,16 @@
+/* position */
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-default {
+  position: static;
+}

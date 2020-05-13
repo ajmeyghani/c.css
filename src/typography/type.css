@@ -4,7 +4,7 @@ html {
 }
 
 .serif, .serif > * {
-  font-family: "times", serif;
+  font-family: 'Playfair Display', times, serif;
 }
 
 body {
@@ -89,5 +89,3 @@ code {
 .strong {
   font-weight: 400;
 }
-
-

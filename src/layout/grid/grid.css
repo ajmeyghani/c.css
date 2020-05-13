@@ -1,0 +1,19 @@
+.flexible-grid {
+  --cell-min-width: 17rem;
+  --row-height: 5rem;
+  --grow-type: auto-fit;
+
+  display: grid;
+  grid-gap: var(--space);
+  grid-template-columns: repeat(
+    var(--grow-type),
+    minmax(var(--cell-min-width), 1fr)
+  );
+
+  grid-auto-rows: var(--row-height);
+  align-items: stretch;
+}
+
+.flexible-grid > * {
+  width: 100%;
+}

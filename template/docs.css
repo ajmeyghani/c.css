@@ -8,8 +8,8 @@ html.read-mode {
 
 .docs-body {
   max-width: 1024px;
-  margin: var(--space) auto;
-  padding: var(--space);
+  margin: 0 auto;
+  padding: 0 var(--space);
 }
 
 .vertical-grid {
@@ -32,35 +32,11 @@ html.read-mode {
 .vertical-grid::after {
   top: 0;
   background: linear-gradient(rgb(0, 173, 255) 1px, transparent 1px) left top /
-  1px var(--base-font-size);
+    1px var(--base-font-size);
 }
 
 body.vertical-grid *:not(hr) {
-  background-color: rgba(0, 0, 0, 0.18) !important;
-}
-
-#toggle-grid-button {
-  background: none;
-  border: 1px solid;
-  padding: 5px;
-  position: fixed;
-  top: 1rem; right: 1rem
-}
-
-#toggle-read-mode {
- background: none;
- border: 1px solid;
- padding: 5px;
- position: fixed;
- top: 3rem; right: 1rem
-}
-
-#toggle-font {
- background: none;
- border: 1px solid;
- padding: 5px;
- position: fixed;
- top: 5rem; right: 1rem
+  background-color: rgba(28, 18, 51, 0.12) !important
 }
 
 [class*="box"] {
@@ -70,8 +46,8 @@ body.vertical-grid *:not(hr) {
   border: 1px solid #66e2ff;
 }
 
-.box--lg {
-  width: 25%
+.box-lg {
+  width: 25%;
 }
 
 .area {
