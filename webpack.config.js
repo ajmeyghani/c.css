@@ -72,6 +72,12 @@ module.exports = {
       chunks: ["core", "arrange", "docs"]
     }),
     new HtmlWebpackPlugin({
+      title: "c.css -- Layout",
+      filename: "public/layout.html",
+      template: "template/layout.tpl.html",
+      chunks: ["core", "layout", "docs"]
+    }),
+    new HtmlWebpackPlugin({
       title: "c.css -- Content Mode",
       filename: "public/content-mode.html",
       template: "template/content-mode.tpl.html",
@@ -87,7 +93,13 @@ module.exports = {
       title: "c.css--typography",
       filename: "public/typography.html",
       template: "template/typography.tpl.html",
-      chunks: ["core", "typography", "docs"]
+      chunks: ["core", "typography", "docs", "layout"]
+    }),
+    new HtmlWebpackPlugin({
+      title: "c.css--login",
+      filename: "public/login.html",
+      template: "template/login.tpl.html",
+      chunks: ["core", "typography", "arrange", "layout", "docs"]
     }),
   ],
 
