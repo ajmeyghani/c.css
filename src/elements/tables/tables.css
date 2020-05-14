@@ -1,44 +1,52 @@
-.table {
+[class*="table"] {
   width: 100%;
   line-height: 1.4375rem;
 }
 
-.table tr {
+[class*="table"] tr {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem , 1fr));
 }
 
-.table td,
-.table th {
+[class*="table"] td,
+[class*="table"] th {
   padding: 0;
   display: flex;
   align-items: center;
   font-weight: 100;
 }
 
-.table caption {
+[class*="table"] caption {
   caption-side: bottom;
   margin-top: var(--space);
   line-height: 0.8;
 }
 
-.table tfoot td {
+[class*="table"] tfoot td {
 }
 
-/* Table Theme 1 */
-/* need to rethink the theme idea here, should it be styles? */
-/* if themes means colors, then styles means different variations ?*/
-.table.theme1 {
-  border: 1px solid var(--gray);
+/* style 1: very minimal table with small
+   padding and light border.
+*/
+[class*="table"][class*="-s1"] {
+  --table-s1-border-color: var(--gray-light)
+}
+[class*="table"][class*="-s1"] {
+  border: 1px solid var(--table-s1-border-color);
   border-width: 1px 0 0 1px;
 }
 
-.table.theme1 tr {
-  border-bottom: 1px solid var(--gray);
+[class*="table"][class*="-s1"] tr {
+  border-bottom: 1px solid var(--table-s1-border-color);
 }
 
-.table.theme1 td,
-.table.theme1 th {
-  border-right: 1px solid var(--gray);
+[class*="table"][class*="-s1"] td,
+[class*="table"][class*="-s1"] th {
+  border-right: 1px solid var(--table-s1-border-color);
+}
+
+[class*="table"][class*="-s1"] td,
+[class*="table"][class*="-s1"] th {
+  padding: var(--space-half)
 }
 
