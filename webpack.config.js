@@ -9,44 +9,50 @@ const htmlPages = [
   new HtmlWebpackPlugin({
     title: "c.css",
     filename: "public/index.html",
-    template: "template/index.tpl.html",
+    template: "pages/index.tpl.html",
     chunks: ["c", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - arrange",
     filename: "public/arrange.html",
-    template: "template/arrange.tpl.html",
+    template: "pages/arrange.tpl.html",
     chunks: ["core", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - space",
     filename: "public/space.html",
-    template: "template/space.tpl.html",
+    template: "pages/space.tpl.html",
     chunks: ["core", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - content-mode",
     filename: "public/content-mode.html",
-    template: "template/content-mode.tpl.html",
+    template: "pages/content-mode.tpl.html",
     chunks: ["core", "typography", "layout", "modes", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - lists",
     filename: "public/lists.html",
-    template: "template/lists.tpl.html",
+    template: "pages/lists.tpl.html",
     chunks: ["core", "typography", "lists", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - typography",
     filename: "public/typography.html",
-    template: "template/typography.tpl.html",
+    template: "pages/typography.tpl.html",
     chunks: ["core", "typography", "buttons", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - Login Page Example",
     filename: "public/login.html",
-    template: "template/login.tpl.html",
+    template: "pages/login.tpl.html",
     chunks: ["core", "typography", "buttons", "layout", "docs"]
+  }),
+  new HtmlWebpackPlugin({
+    title: "c.css - Colors",
+    filename: "public/colors.html",
+    template: "pages/colors.tpl.html",
+    chunks: ["core", "typography", "visual", "layout", "docs"]
   }),
 ];
 
@@ -90,7 +96,7 @@ module.exports = {
 
     "visual": glob.sync("./src/visual/**/*.css"),
 
-    "docs": "./template/docs.css"
+    "docs": "./pages/docs.css"
   },
 
   output: {

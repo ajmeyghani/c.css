@@ -3,43 +3,73 @@ body {
   --black: #000;
   --white: #fff;
 
-  /**
-   *  Going to need the theme color hooks:
-   *   `primary`
-   *   `secondary`
-   *   `success`
-   *   `failure`
-   *   `warning`
-   *   `info`
-   *   `gray`
-   *   `fg`
-   *   `bg`
-   *
-   * For each color, need different variations, dark to lightest:
-   *
-   * primary0: dark
-   * primary: base
-   * primary1: 1x lighter
-   * primary2: 2x lighter
-   * primary3: 3x lighter
-   *
-   * In addition for every property, need to have the hsl values
-   * defined separately for more control. For example:
-   *
-   * primary0-h, primary0-s, primary0-l
-   */
-}
+  /*
 
-body {
-  --primary-h: 250; --primary-s: 52%; --primary-l: 54%;
+  Color Hooks:
+
+  `primary`
+  `secondary`
+  `success`
+  `failure`
+  `warning`
+  `info`
+  `gray`
+
+  For each color, need different variations, dark to lightest
+  For example:
+
+  primary-dark
+  primary
+  primary-light
+  primary-lighter
+  primary-lightest
+
+  In addition for every property, need to have the hsl values.
+  For example:
+
+  */
+
+
+ /* Primary */
+  --primary-h: 250;
+  --primary-s: 52%;
+  --primary-l: 54%;
+  --primary-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%));
   --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 15%));
+  --primary-lighter: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 30%));
+  --primary-lightest: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%));
+
+  /* Secondary */
+   --secondary-h: 224;
+   --secondary-s: 52%;
+   --secondary-l: 54%;
+   --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%));
+   --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+   --secondary-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 15%));
+   --secondary-lighter: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 30%));
+   --secondary-lightest: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%));
+
+  /* naming idea:
+  [color]-dark
+  [color]
+  [color]-light
+  [color]-lighter
+  [color]-lightest
+  */
+  --gray-dark: #000;
   --gray: gray;
+  --gray-light: #ccc;
+  --gray-lighter: #ddd;
+  --gray-lightest: #f3f3f3;
 }
 
 body {
   --fg: var(--black);
+  --bg: var(--white);
 }
 
 body.inverted-colors {
   --fg: var(--white);
+  --bg: var(--black);
 }
