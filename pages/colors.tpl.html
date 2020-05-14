@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main class="docs-body space-v-x2">
+      <section style="padding-top: var(--space-x3);">
+        <h1 class="border-bottom">Colors</h1>
+      </section>
+      <section class="space-v">
+        <h3>Primary</h3>
+        <div
+          class="flexible-grid"
+          style="--cell-min-width: 2rem; --row-height: 2rem;"
+        >
+          <div class="color primary-dark"></div>
+          <div class="color primary"></div>
+          <div class="color primary-light"></div>
+          <div class="color primary-lighter"></div>
+          <div class="color primary-lightest"></div>
+        </div>
+      </section>
+
+      <section class="space-v">
+        <h3>Secondary</h3>
+        <div
+          class="flexible-grid"
+          style="--cell-min-width: 2rem; --row-height: 2rem;"
+        >
+          <div class="color secondary-dark"></div>
+          <div class="color secondary"></div>
+          <div class="color secondary-light"></div>
+          <div class="color secondary-lighter"></div>
+          <div class="color secondary-lightest"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
