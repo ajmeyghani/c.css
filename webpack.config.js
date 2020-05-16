@@ -49,7 +49,7 @@ const htmlPages = [
     chunks: ["core", "typography", "buttons", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
-    title: "c.css - Colors",
+    title: "c.css - colors",
     filename: "public/colors.html",
     template: "pages/colors.tpl.html",
     chunks: ["core", "typography", "visual", "layout", "docs"]
@@ -95,6 +95,7 @@ module.exports = {
     "buttons": glob.sync("./src/elements/buttons/**/*.css"),
 
     "visual": glob.sync("./src/visual/**/*.css"),
+    "colors": glob.sync("./src/visual/colors.css"),
 
     "docs": "./pages/docs.css"
   },
