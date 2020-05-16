@@ -54,6 +54,12 @@ const htmlPages = [
     template: "pages/colors.tpl.html",
     chunks: ["core", "typography", "visual", "layout", "docs"]
   }),
+  new HtmlWebpackPlugin({
+    title: "c.css - tables",
+    filename: "public/tables.html",
+    template: "pages/tables.tpl.html",
+    chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
+  }),
 ];
 
 const plugins = [

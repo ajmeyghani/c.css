@@ -29,11 +29,12 @@
    padding and light border.
 */
 [class*="table"][class*="-s1"] {
-  --table-s1-border-color: var(--gray-light)
+  --table-s1-border-color: var(--gray-lighter)
 }
 [class*="table"][class*="-s1"] {
   border: 1px solid var(--table-s1-border-color);
   border-width: 1px 0 0 1px;
+  border-left: none
 }
 
 [class*="table"][class*="-s1"] tr {
@@ -45,8 +46,50 @@
   border-right: 1px solid var(--table-s1-border-color);
 }
 
+[class*="table"][class*="-s1"] td:first-child,
+[class*="table"][class*="-s1"] th:first-child {
+  border-left: 1px solid var(--table-s1-border-color);
+}
+
 [class*="table"][class*="-s1"] td,
 [class*="table"][class*="-s1"] th {
   padding: var(--space-half)
+}
+
+[class*="table"][class*="-s1"] th {
+  background-color: var(--gray-lightest)
+}
+
+
+/* primary style */
+[class*="table"][class*="-s1"][class*="-primary"] th {
+  background-color: var(--primary);
+  color: var(--primary-lightest);
+}
+
+[class*="table"][class*="-s1"][class*="-primary"] th:first-child {
+  border-left: none
+}
+
+[class*="table"][class*="-s1"][class*="-primary"] th:last-child {
+  border-right: none
+}
+
+/* stripe */
+[class*="table"][class*="stripe"] tr:nth-child(odd) {
+  background-color: var(--gray-lightest);
+}
+
+/* rounded */
+[class*="table"][class*="rounded"] th:first-child {
+  border-top-left-radius: 5px;
+}
+
+[class*="table"][class*="rounded"] th:last-child {
+  border-top-right-radius: 5px;
+}
+
+[class*="table"][class*="rounded"] {
+  border-top: none
 }
 
