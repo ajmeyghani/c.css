@@ -25,8 +25,6 @@ body {
   primary-lightest
 
   In addition for every property, need to have the hsl values.
-  For example:
-
   */
 
 
@@ -49,6 +47,17 @@ body {
    --secondary-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 15%));
    --secondary-lighter: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 30%));
    --secondary-lightest: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%));
+
+  /* Success */
+   --success-h: 100;
+   --success-s: 52%;
+   --success-l: 54%;
+   --success-dark: hsl(var(--success-h), var(--success-s), calc(var(--success-l) - 20%));
+   --success: hsl(var(--success-h), var(--success-s), var(--success-l));
+   --success-light: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + 15%));
+   --success-lighter: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + 30%));
+   --success-lightest: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + 40%));
+
 
   /* naming idea:
   [color]-dark

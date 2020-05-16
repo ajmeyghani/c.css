@@ -36,7 +36,7 @@ html.read-mode {
 }
 
 body.vertical-grid *:not(hr) {
-  background-color: rgba(28, 18, 51, 0.12) !important
+  background-color: rgba(28, 18, 51, 0.12) !important;
 }
 
 [class*="box"] {
@@ -57,6 +57,11 @@ body.vertical-grid *:not(hr) {
   border: 1px solid gray;
 }
 
+/* colors */
+.colors {
+  --cell-min-width: 2rem;
+  --row-height: 2rem;
+}
 
 .color.primary-dark {
   background-color: var(--primary-dark);
@@ -97,4 +102,25 @@ body.vertical-grid *:not(hr) {
 
 .color.secondary-lightest {
   background-color: var(--secondary-lightest);
+}
+
+
+.color.success-dark {
+  background-color: var(--success-dark);
+}
+
+.color.success {
+  background-color: var(--success);
+}
+
+.color.success-light {
+  background-color: var(--success-light);
+}
+
+.color.success-lighter {
+  background-color: var(--success-lighter);
+}
+
+.color.success-lightest {
+  background-color: var(--success-lightest);
 }
