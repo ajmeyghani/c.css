@@ -66,19 +66,15 @@ body.vertical-grid *:not(hr) {
 .color.primary-dark {
   background-color: var(--primary-dark);
 }
-
 .color.primary {
   background-color: var(--primary);
 }
-
 .color.primary-light {
   background-color: var(--primary-light);
 }
-
 .color.primary-lighter {
   background-color: var(--primary-lighter);
 }
-
 .color.primary-lightest {
   background-color: var(--primary-lightest);
 }
@@ -87,19 +83,15 @@ body.vertical-grid *:not(hr) {
 .color.secondary-dark {
   background-color: var(--secondary-dark);
 }
-
 .color.secondary {
   background-color: var(--secondary);
 }
-
 .color.secondary-light {
   background-color: var(--secondary-light);
 }
-
 .color.secondary-lighter {
   background-color: var(--secondary-lighter);
 }
-
 .color.secondary-lightest {
   background-color: var(--secondary-lightest);
 }
@@ -108,19 +100,84 @@ body.vertical-grid *:not(hr) {
 .color.success-dark {
   background-color: var(--success-dark);
 }
-
 .color.success {
   background-color: var(--success);
 }
-
 .color.success-light {
   background-color: var(--success-light);
 }
-
 .color.success-lighter {
   background-color: var(--success-lighter);
 }
-
 .color.success-lightest {
   background-color: var(--success-lightest);
+}
+
+
+.color.danger-dark {
+  background-color: var(--danger-dark);
+}
+.color.danger {
+  background-color: var(--danger);
+}
+.color.danger-light {
+  background-color: var(--danger-light);
+}
+.color.danger-lighter {
+  background-color: var(--danger-lighter);
+}
+.color.danger-lightest {
+  background-color: var(--danger-lightest);
+}
+
+
+
+.color.warning-dark {
+  background-color: var(--warning-dark);
+}
+.color.warning {
+  background-color: var(--warning);
+}
+.color.warning-light {
+  background-color: var(--warning-light);
+}
+.color.warning-lighter {
+  background-color: var(--warning-lighter);
+}
+.color.warning-lightest {
+  background-color: var(--warning-lightest);
+}
+
+
+.color.info-dark {
+  background-color: var(--info-dark);
+}
+.color.info {
+  background-color: var(--info);
+}
+.color.info-light {
+  background-color: var(--info-light);
+}
+.color.info-lighter {
+  background-color: var(--info-lighter);
+}
+.color.info-lightest {
+  background-color: var(--info-lightest);
+}
+
+
+.color.gray-dark {
+  background-color: var(--gray-dark);
+}
+.color.gray {
+  background-color: var(--gray);
+}
+.color.gray-light {
+  background-color: var(--gray-light);
+}
+.color.gray-lighter {
+  background-color: var(--gray-lighter);
+}
+.color.gray-lightest {
+  background-color: var(--gray-lightest);
 }
