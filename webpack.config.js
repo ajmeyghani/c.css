@@ -16,13 +16,13 @@ const htmlPages = [
     title: "c.css - arrange",
     filename: "public/arrange.html",
     template: "pages/arrange.tpl.html",
-    chunks: ["core", "layout", "docs"]
+    chunks: ["core", "typography", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - space",
     filename: "public/space.html",
     template: "pages/space.tpl.html",
-    chunks: ["core", "layout", "docs"]
+    chunks: ["core", "typography", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - content-mode",
@@ -34,7 +34,7 @@ const htmlPages = [
     title: "c.css - lists",
     filename: "public/lists.html",
     template: "pages/lists.tpl.html",
-    chunks: ["core", "typography", "lists", "docs"]
+    chunks: ["core", "typography", "layout", "lists", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - typography",
@@ -46,7 +46,7 @@ const htmlPages = [
     title: "c.css - Login Page Example",
     filename: "public/login.html",
     template: "pages/login.tpl.html",
-    chunks: ["core", "typography", "buttons", "layout", "docs"]
+    chunks: ["core", "typography", "buttons", "layout", "forms", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - colors",
@@ -60,6 +60,12 @@ const htmlPages = [
     template: "pages/tables.tpl.html",
     chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
   }),
+  new HtmlWebpackPlugin({
+    title: "c.css - forms",
+    filename: "public/forms.html",
+    template: "pages/forms.tpl.html",
+    chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
+  })
 ];
 
 const plugins = [
@@ -98,6 +104,7 @@ module.exports = {
     "elements": glob.sync("./src/elements/**/*.css"),
     "lists": glob.sync("./src/elements/lists/**/*.css"),
     "tables": glob.sync("./src/elements/tables/**/*.css"),
+    "forms": glob.sync("./src/elements/forms/**/*.css"),
     "buttons": glob.sync("./src/elements/buttons/**/*.css"),
 
     "visual": glob.sync("./src/visual/**/*.css"),

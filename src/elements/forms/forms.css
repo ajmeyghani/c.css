@@ -1,0 +1,25 @@
+fieldset {
+  line-height: 1.9375rem;
+  padding: var(--space);
+  border: 1px solid var(--gray);
+  border-radius: 2px;
+}
+
+input, textarea {
+  padding: 0.3em 0.3em;
+  width: 100%;
+}
+
+input[type="color"] {
+  width: 44px;
+  height: 23px;
+  padding: 1px 2px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  width: auto;
+}
