@@ -9,7 +9,7 @@ html.read-mode {
 .docs-body {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 var(--space);
+  padding: var(--space) var(--space) var(--space-x2) var(--space);
 }
 
 .vertical-grid {
@@ -129,7 +129,6 @@ body.vertical-grid *:not(hr) {
 .color.danger-lightest {
   background-color: var(--danger-lightest);
 }
-
 
 
 .color.warning-dark {

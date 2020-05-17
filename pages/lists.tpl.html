@@ -8,42 +8,55 @@
     />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body class="docs-body">
+  <body class="docs-body space-v">
+    <h1 class="headline">Lists</h1>
 
-    <section>
-      <ul>
-        <li>
-          Unordered List item one
+    <main class="space-v-x2">
+      <article class="space-v">
+        <h3 class="headline">Unordered Lists</h3>
+
+        <section>
           <ul>
             <li>
-              Nested list item
+              Unordered List item one
               <ul>
-                <li>Level 3, item one</li>
-                <li>Level 3, item two</li>
-                <li>Level 3, item three</li>
-                <li>Level 3, item four</li>
+                <li>
+                  Nested list item
+                  <ul>
+                    <li>Level 3, item one</li>
+                    <li>Level 3, item two</li>
+                    <li>Level 3, item three</li>
+                    <li>Level 3, item four</li>
+                  </ul>
+                </li>
+                <li>List item two</li>
+                <li>List item three</li>
+                <li>List item four</li>
               </ul>
             </li>
             <li>List item two</li>
             <li>List item three</li>
             <li>List item four</li>
           </ul>
-        </li>
-        <li>List item two</li>
-        <li>List item three</li>
-        <li>List item four</li>
-      </ul>
-    </section>
+        </section>
+      </article>
 
-    <section>
-      <ol>
-        <li>
-          List item one
+      <article class="space-v">
+        <h3 class="headline">Ordered Lists</h3>
+        <section>
           <ol>
             <li>
               List item one
               <ol>
-                <li>List item one</li>
+                <li>
+                  List item one
+                  <ol>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                    <li>List item four</li>
+                  </ol>
+                </li>
                 <li>List item two</li>
                 <li>List item three</li>
                 <li>List item four</li>
@@ -53,97 +66,83 @@
             <li>List item three</li>
             <li>List item four</li>
           </ol>
-        </li>
-        <li>List item two</li>
-        <li>List item three</li>
-        <li>List item four</li>
-      </ol>
-    </section>
+        </section>
+      </article>
 
-    <section>
-      <ul>
-        <li>
-          BulletX
-          <ol>
-            <li>Bullet x1</li>
-            <li>Bullet x2</li>
+      <article class="space-v">
+        <h3 class="headline">Combination</h3>
+        <section>
+          <ul>
             <li>
-              Bullet x3
+              BulletX
               <ol>
-                <li>Bullet x3.1</li>
+                <li>Bullet x1</li>
+                <li>Bullet x2</li>
                 <li>
-                  Bullet x3.2
-                  <ul>
-                    <li>Bullet x3.2 Sub a</li>
-                    <li>Bullet x3.2 Sub b</li>
-                  </ul>
+                  Bullet x3
+                  <ol>
+                    <li>Bullet x3.1</li>
+                    <li>
+                      Bullet x3.2
+                      <ul>
+                        <li>Bullet x3.2 Sub a</li>
+                        <li>Bullet x3.2 Sub b</li>
+                      </ul>
+                    </li>
+                  </ol>
                 </li>
               </ol>
             </li>
-          </ol>
-        </li>
-        <li>
-          BulletY
-          <ul>
-            <li>BulletY, a</li>
-            <li>BulletY, b</li>
             <li>
-              BulletY, c
+              BulletY
               <ul>
+                <li>BulletY, a</li>
+                <li>BulletY, b</li>
                 <li>
-                  BulletYC Items
-                  <ol>
-                    <li>BulletY c1</li>
-                    <li>BulletY c2</li>
-                  </ol>
+                  BulletY, c
+                  <ul>
+                    <li>
+                      BulletYC Items
+                      <ol>
+                        <li>BulletY c1</li>
+                        <li>BulletY c2</li>
+                      </ol>
+                    </li>
+                    <li>Bullet YC More</li>
+                  </ul>
                 </li>
-                <li>Bullet YC More</li>
               </ul>
             </li>
+            <li>
+              BulletZ
+              <ol>
+                <li>BulletZ 1</li>
+                <li>BulletZ 2</li>
+              </ol>
+            </li>
           </ul>
-        </li>
-        <li>
-          BulletZ
-          <ol>
-            <li>BulletZ 1</li>
-            <li>BulletZ 2</li>
-          </ol>
-        </li>
-      </ul>
-    </section>
+        </section>
+      </article>
 
-    <section>
-      <dl>
-        <dt>Definition List Title</dt>
-        <dd>Definition list division.</dd>
-        <dt>Kitchen Sink</dt>
-        <dd>
-          Used in expressions to describe work in which all conceivable (and
-          some inconceivable) sources have been mined. In this case, a bunch
-          of markup.
-        </dd>
-        <dt>aside</dt>
-        <dd>Defines content aside from the page content</dd>
-        <dt>blockquote</dt>
-        <dd>Defines a section that is quoted from another source</dd>
-      </dl>
-    </section>
-
-    <button id="toggle-grid-button">Toggle Grid</button>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        function toggleGrid() {
-          document.body.classList.toggle("vertical-grid");
-        }
-
-        window.toggleGrid = toggleGrid;
-
-        document
-          .querySelector("#toggle-grid-button")
-          .addEventListener("click", toggleGrid);
-      });
-    </script>
-
+      <article class="space-v">
+        <h3 class="headline">Definition Lists</h3>
+        <section>
+          <dl>
+            <dt>Definition List Title</dt>
+            <dd>Definition list division.</dd>
+            <dt>Kitchen Sink</dt>
+            <dd>
+              Used in expressions to describe work in which all conceivable (and
+              some inconceivable) sources have been mined. In this case, a bunch
+              of markup.
+            </dd>
+            <dt>aside</dt>
+            <dd>Defines content aside from the page content</dd>
+            <dt>blockquote</dt>
+            <dd>Defines a section that is quoted from another source</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
