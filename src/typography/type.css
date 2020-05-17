@@ -20,45 +20,66 @@ small, .small,  .small > * {
 
 p {
   font-size: var(--body-font-size);
+}
+
+.read-mode p {
   text-align: justify;
   text-justify: inter-word;
 }
 
-h1, h2, h3, h4 {
+h1 {
   line-height: 2rem;
 }
 
-h5, h6 {
+h2 {
+  line-height: 2rem;
+}
+
+h3 {
+  line-height: 1rem;
+}
+
+h4 {
+  line-height: 1rem;
+}
+
+h5 {
+  line-height: 1rem;
+}
+
+h6 {
   line-height: 1rem;
 }
 
 h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
   font-size: 2.1rem;
 }
 
-h3 {
+h2 {
   font-size: 1.7rem;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 h6 {
   font-size: 1rem;
 }
 
-.title-1, .h1{
+[class*="headline"] {
   border-bottom: 1px solid var(--gray-lighter);
-  padding-top: var(--space-x2);
+}
+
+.headline {
   padding-bottom: var(--space)
 }
 
@@ -75,21 +96,14 @@ figcaption {
   line-height: 1.5625rem;
 }
 
-fieldset {
-  line-height: 1.9375rem;
-  padding: var(--sp1);
-  border: 1px solid var(--gray);
-  border-radius: 2px;
-}
-
 blockquote {
   border-left: 4px solid var(--gray);
   padding-left: var(--space);
 }
 
 code {
-  background-color: var(--gray2);
-  padding: 0
+  background-color: var(--gray-lightest);
+  padding: 0.2em 0.3em
 }
 
 .strong {
