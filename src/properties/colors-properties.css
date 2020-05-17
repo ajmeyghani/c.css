@@ -1,104 +1,87 @@
 body {
+  /* saturation control */
+  --global-saturation: 50%;
+  --global-lightness: 50%;
+
+  /* global inc control */
+  --global-darkness-inc: 15%;
+  --global-light1-inc: 15%;
+  --global-light2-inc: 30%;
+  --global-light3-inc: 45%;
+
   /* base b/w colors */
   --black: #000;
   --white: #fff;
 
-/*
+  /* Primary */
+  --primary-h: 225;
+  --primary-s: var(--global-saturation);
+  --primary-l: var(--global-lightness);
+  --primary-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - var(--global-darkness-inc)));
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light1-inc)));
+  --primary-lighter: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light2-inc)));
+  --primary-lightest: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light3-inc)));
 
-Color Hooks:
+  /* Secondary */
+  --secondary-h: 250;
+  --secondary-s: var(--global-saturation);
+  --secondary-l: var(--global-lightness);
+  --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - var(--global-darkness-inc)));
+  --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+  --secondary-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light1-inc)));
+  --secondary-lighter: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light2-inc)));
+  --secondary-lightest: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light3-inc)));
 
-`primary`
-`secondary`
-`success`
-`failure`
-`warning`
-`info`
-`gray`
+  /* Success */
+  --success-h: 115;
+  --success-s: 40%;
+  --success-l: 40%;
+  --success-dark: hsl(var(--success-h), var(--success-s), calc(var(--success-l) - var(--global-darkness-inc)));
+  --success: hsl(var(--success-h), var(--success-s), var(--success-l));
+  --success-light: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light1-inc)));
+  --success-lighter: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light2-inc)));
+  --success-lightest: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light3-inc)));
 
-*/
+  /* Danger */
+  --danger-h: 349;
+  --danger-s: 80%;
+  --danger-l: 40%;
+  --danger-dark: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) - var(--global-darkness-inc)));
+  --danger: hsl(var(--danger-h), var(--danger-s), var(--danger-l));
+  --danger-light: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light1-inc)));
+  --danger-lighter: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light2-inc)));
+  --danger-lightest: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light3-inc)));
 
-/* saturation control */
---global-saturation: 50%;
---global-lightness: 50%;
+  /* Warning */
+  --warning-h: 43;
+  --warning-s: 100%;
+  --warning-l: 42%;
+  --warning-dark: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) - var(--global-darkness-inc)));
+  --warning: hsl(var(--warning-h), var(--warning-s), var(--warning-l));
+  --warning-light: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light1-inc)));
+  --warning-lighter: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light2-inc)));
+  --warning-lightest: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light3-inc)));
 
---global-darkness-inc: 15%;
---global-light1-inc: 15%;
---global-light2-inc: 30%;
---global-light3-inc: 45%;
+  /* Info */
+  --info-h: 212;
+  --info-s: 82%;
+  --info-l: 40%;
+  --info-dark: hsl(var(--info-h), var(--info-s), calc(var(--info-l) - var(--global-darkness-inc)));
+  --info: hsl(var(--info-h), var(--info-s), var(--info-l));
+  --info-light: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light1-inc)));
+  --info-lighter: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light2-inc)));
+  --info-lightest: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light3-inc)));
 
-
-/* Primary */
---primary-h: 225;
---primary-s: var(--global-saturation);
---primary-l: var(--global-lightness);
---primary-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - var(--global-darkness-inc)));
---primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
---primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light1-inc)));
---primary-lighter: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light2-inc)));
---primary-lightest: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + var(--global-light3-inc)));
-
-/* Secondary */
---secondary-h: 250;
---secondary-s: var(--global-saturation);
---secondary-l: var(--global-lightness);
---secondary-dark: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - var(--global-darkness-inc)));
---secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
---secondary-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light1-inc)));
---secondary-lighter: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light2-inc)));
---secondary-lightest: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + var(--global-light3-inc)));
-
-/* Success */
---success-h: 115;
---success-s: 40%;
---success-l: 40%;
---success-dark: hsl(var(--success-h), var(--success-s), calc(var(--success-l) - var(--global-darkness-inc)));
---success: hsl(var(--success-h), var(--success-s), var(--success-l));
---success-light: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light1-inc)));
---success-lighter: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light2-inc)));
---success-lightest: hsl(var(--success-h), var(--success-s), calc(var(--success-l) + var(--global-light3-inc)));
-
-/* Danger */
---danger-h: 349;
---danger-s: 80%;
---danger-l: 40%;
---danger-dark: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) - var(--global-darkness-inc)));
---danger: hsl(var(--danger-h), var(--danger-s), var(--danger-l));
---danger-light: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light1-inc)));
---danger-lighter: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light2-inc)));
---danger-lightest: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) + var(--global-light3-inc)));
-
-
-/* Warning */
---warning-h: 43;
---warning-s: 100%;
---warning-l: 42%;
---warning-dark: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) - var(--global-darkness-inc)));
---warning: hsl(var(--warning-h), var(--warning-s), var(--warning-l));
---warning-light: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light1-inc)));
---warning-lighter: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light2-inc)));
---warning-lightest: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) + var(--global-light3-inc)));
-
-
-/* Info */
---info-h: 212;
---info-s: 82%;
---info-l: 40%;
---info-dark: hsl(var(--info-h), var(--info-s), calc(var(--info-l) - var(--global-darkness-inc)));
---info: hsl(var(--info-h), var(--info-s), var(--info-l));
---info-light: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light1-inc)));
---info-lighter: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light2-inc)));
---info-lightest: hsl(var(--info-h), var(--info-s), calc(var(--info-l) + var(--global-light3-inc)));
-
-
-/* Gray */
---gray-h: 212;
---gray-s: 10%;
---gray-l: 50%;
---gray-dark: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) - var(--global-darkness-inc)));
---gray: hsl(var(--gray-h), var(--gray-s), var(--gray-l));
---gray-light: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light1-inc)));
---gray-lighter: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light2-inc)));
---gray-lightest: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light3-inc)));
+  /* Gray */
+  --gray-h: 212;
+  --gray-s: 10%;
+  --gray-l: 50%;
+  --gray-dark: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) - var(--global-darkness-inc)));
+  --gray: hsl(var(--gray-h), var(--gray-s), var(--gray-l));
+  --gray-light: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light1-inc)));
+  --gray-lighter: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light2-inc)));
+  --gray-lightest: hsl(var(--gray-h), var(--gray-s), calc(var(--gray-l) + var(--global-light3-inc)));
 }
 
 body {
