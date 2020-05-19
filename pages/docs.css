@@ -2,9 +2,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-html.read-mode {
-  --base-font-size: 22px;
-}
 
 .docs-body {
   max-width: 1024px;
