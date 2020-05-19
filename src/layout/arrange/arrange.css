@@ -62,3 +62,11 @@
 [class*="arrange"][class*="wrap"] > * {
   margin-bottom: var(--arrange-gap);
 }
+
+[class*="arrange"][class*="-wrap"][class*="-half"] {
+  --arrange-gap: var(--space-half);
+}
+
+[class*="arrange"][class*="-wrap"][class*="-x2"] {
+  --arrange-gap: var(--space-x2);
+}

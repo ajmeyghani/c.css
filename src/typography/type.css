@@ -3,76 +3,56 @@ html {
   color: var(--fg);
 }
 
-.serif, .serif > * {
-  font-family: 'Playfair Display', times, serif;
-}
-
 body {
   font-size: var(--body-font-size);
-  line-height: 1.5rem;
+  line-height: var(--base-font-lh);
   font-weight: normal;
 }
 
-small, .small,  .small > * {
+small,
+.small,
+.small > * {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+
+.strong, strong {
+  font-weight: 400;
+}
+
 
 p {
   font-size: var(--body-font-size);
 }
 
-.read-mode p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 h1 {
+  font-size: 2rem;
   line-height: 2rem;
 }
 
 h2 {
+  font-size: 1.6rem;
   line-height: 2rem;
-}
-
-h3 {
-  line-height: 1rem;
-}
-
-h4 {
-  line-height: 1rem;
-}
-
-h5 {
-  line-height: 1rem;
-}
-
-h6 {
-  line-height: 1rem;
-}
-
-h1 {
-  font-size: 2.1rem;
-}
-
-h2 {
-  font-size: 1.7rem;
 }
 
 h3 {
   font-size: 1.2rem;
+  line-height: 1rem;
 }
 
 h4 {
   font-size: 1.1rem;
+  line-height: 1rem;
 }
 
 h5 {
   font-size: 1rem;
+  line-height: 1rem;
 }
 
 h6 {
   font-size: 1rem;
+  line-height: 1rem;
 }
 
 [class*="headline"] {
@@ -80,15 +60,17 @@ h6 {
 }
 
 .headline {
-  padding-bottom: var(--space)
+  padding-bottom: var(--space-half);
 }
 
-a, .link {
+a,
+.link {
   color: var(--primary);
   text-decoration: none;
 }
 
-a:hover, .link:hover {
+a:hover,
+.link:hover {
   text-decoration: underline;
 }
 
@@ -97,15 +79,12 @@ figcaption {
 }
 
 blockquote {
-  border-left: 4px solid var(--gray);
-  padding-left: var(--space);
+  border-left: 4px solid var(--gray-lighter);
+  padding: var(--space-half) var(--space);
 }
 
 code {
   background-color: var(--gray-lightest);
-  padding: 0.2em 0.3em
+  padding: 0.1em 0.3em;
 }
 
-.strong {
-  font-weight: 400;
-}

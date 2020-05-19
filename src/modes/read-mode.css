@@ -1,0 +1,12 @@
+html.read-mode {
+  --base-font-size: 23px;
+}
+
+.read-mode p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.serif, .serif > * {
+  font-family: 'Playfair Display', times, serif;
+}

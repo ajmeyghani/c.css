@@ -86,6 +86,7 @@ body {
 
 body {
   --fg: var(--black);
+  --fg-light: var(--gray-dark);
   --bg: var(--white);
 }
 

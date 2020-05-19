@@ -16,7 +16,7 @@ const htmlPages = [
     title: "c.css - arrange",
     filename: "public/arrange.html",
     template: "pages/arrange.tpl.html",
-    chunks: ["core", "typography", "layout", "docs"]
+    chunks: ["core", "lists", "typography", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - space",
@@ -40,7 +40,7 @@ const htmlPages = [
     title: "c.css - typography",
     filename: "public/typography.html",
     template: "pages/typography.tpl.html",
-    chunks: ["core", "typography", "buttons", "layout", "docs"]
+    chunks: ["core", "typography", "modes", "buttons", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - Login Page Example",
@@ -52,13 +52,19 @@ const htmlPages = [
     title: "c.css - colors",
     filename: "public/colors.html",
     template: "pages/colors.tpl.html",
-    chunks: ["core", "typography", "visual", "layout", "docs"]
+    chunks: ["core", "typography", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - tables",
     filename: "public/tables.html",
     template: "pages/tables.tpl.html",
     chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
+  }),
+  new HtmlWebpackPlugin({
+    title: "c.css - buttons",
+    filename: "public/buttons.html",
+    template: "pages/buttons.tpl.html",
+    chunks: ["core", "typography", "layout", "buttons", "docs"]
   }),
   new HtmlWebpackPlugin({
     title: "c.css - forms",

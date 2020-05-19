@@ -33,3 +33,7 @@ The API documentation is available in the [docs](./docs) folder.
 - [ ] Define color system
 - [ ] Define hook for vertical rhythm
 - [ ] Showcase examples, demonstrating possibilities
+- [ ] Add docs for creating different bundles
+- [ ] Add guides and tutorials
+- [ ] Hooks for creating more complex custom components
+- [ ] Hooks for creating buttons out there? size system etc ...

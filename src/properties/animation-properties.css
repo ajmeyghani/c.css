@@ -1,0 +1,5 @@
+html {
+  --transition-duration: 250ms;
+  --transition-easing: ease-in-out;
+  --transition-all: all var(--transition-duration) var(--transition-easing);
+}

@@ -14,3 +14,13 @@
 .pos-default {
   position: static;
 }
+
+/* fill width */
+.fill-w {
+  width: 100%;
+}
+
+/* pill */
+.pill {
+  border-radius: 100rem
+}
