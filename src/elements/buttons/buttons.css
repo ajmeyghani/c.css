@@ -1,13 +1,61 @@
 @import "wingcss/src/buttons.css";
+/* TODO: not sure if I want to provide styles,
+instead hooks so that you can write adapters,
+mostly to deal with colors and padding/margin
+values, hook into the sizing system...
+*/
 
-button, [type=submit], [type="reset"], [type="button"] {
+/* base styles */
+button, [type=submit],
+[type="reset"], [type="button"],
+button.outline {
   padding: 0.4rem 1rem;
   margin: 0;
   background: var(--black);
   color: var(--white);
   font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-all);
+  transition-property: transform, background;
+  border: none;
+  transform: scale(1);
 }
 
-button.extend-w {
-  width: 100%
+/* outline */
+button.outline, [type=submit].outline,
+[type=reset].outline, [type=button].outline {
+  background: none;
+  color: var(--fg);
+  border: 1.5px solid var(--fg);
+}
+
+button:hover, [type=submit]:hover,
+[type="reset"]:hover, [type="button"]:hover {
+  background: var(--fg-light);
+}
+
+button.outline:hover, [type=submit].outline:hover,
+[type="reset"].outline:hover, [type="button"].outline:hover {
+  background: none;
+  color: var(--fg)
+}
+
+/* states */
+button:active, [type=submit]:active,
+[type=reset]:active, [type=button]:active,
+
+button:visited, [type=submit]:visited,
+[type=reset]:visited, [type=button]:visited,
+
+button:focus, [type=submit]:focus,
+[type=reset]:focus, [type=button]:focus {
+  outline: 0
+}
+
+button:active, [type=submit]:active,
+[type=reset]:active, [type=button]:active {
+  transform: scale(.99);
 }
