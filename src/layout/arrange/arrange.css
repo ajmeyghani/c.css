@@ -47,7 +47,6 @@
 }
 
 /* Wrapping */
-/* TODO: revisit this and how it compares to space-h */
 [class*="arrange"][class*="-wrap"],
 [class*="arrange"][class*="-sh"][class*="-wrap"] {
   --arrange-gap: var(--space);
@@ -79,14 +78,16 @@
   --arrange-gap: var(--space-x4);
 }
 
-/* wrap centering */
-/* todo: prob better to do the wrapping thing with grid
-row-gap and col-gap;
-
-grid-row-gap and grid-col-gap
-*/
+/* wrap and center */
 [class*="arrange"][class*="-wrap"][class*="-cv"] {
   align-content: center;
+  margin: calc(var(--arrange-gap) * -1);
+  margin-left: 0;
+  margin-top: var(--arrange-gap);
 }
 
+[class*="arrange"][class*="-wrap"][class*="-cv"] > * {
+  margin: var(--arrange-gap);
+  margin-left: 0;
+}
 
