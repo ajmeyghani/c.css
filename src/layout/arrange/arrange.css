@@ -87,7 +87,8 @@
 }
 
 [class*="arrange"][class*="-wrap"][class*="-cv"] > * {
-  margin: var(--arrange-gap);
+  margin: calc(var(--arrange-gap) / 2);
+  margin-bottom: calc(var(--arrange-gap) / 2);
   margin-left: 0;
 }
 
