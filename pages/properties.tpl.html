@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="docs-body space-v">
+    <section>
+      <h1 class="headline">Other Properties</h1>
+    </section>
+
+    <article class="space-v-x2">
+      <section class="space-v">
+        <h2>Space Properties</h2>
+        <p>
+          Space properties can be used when spacing elements on a page to ensure
+          consistency. The base value is at <code>1rem</code>, so if the base font
+          size is 16px, the base space value is then computed as 16px. All the
+          space-related properties are listed below:
+        </p>
+        <ul>
+          <li><code>space-half</code></li>
+          <li><code>space</code></li>
+          <li><code>space-x2</code></li>
+          <li><code>space-x3</code></li>
+          <li><code>space-x4</code></li>
+        </ul>
+      </section>
+
+      <section class="space-v">
+        <h2>Font Properties</h2>
+        <ul>
+          <li><code>--base-font-size</code> 20px;</li>
+          <li><code>--body-font-size</code> 0.95rem;</li>
+          <li><code>--base-font-lh</code> 1.5rem;</li>
+        </ul>
+      </section>
+
+      <section class="space-v">
+        <h2>Animation Properties</h2>
+        <ul>
+          <li><code>--transition-duration</code> 250ms;</li>
+          <li><code>--transition-easing</code> ease-in-out;</li>
+          <li>
+            <code>--transition-all</code> all var(--transition-duration)
+            var(--transition-easing);
+          </li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>
