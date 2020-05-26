@@ -8,49 +8,141 @@
     />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body class="docs-body space-v">
-    <section>
-      <h1 class="headline">Other Properties</h1>
-    </section>
-
-    <article class="space-v-x2">
-      <section class="space-v">
-        <h2>Space Properties</h2>
-        <p>
-          Space properties can be used when spacing elements on a page to ensure
-          consistency. The base value is at <code>1rem</code>, so if the base font
-          size is 16px, the base space value is then computed as 16px. All the
-          space-related properties are listed below:
-        </p>
-        <ul>
-          <li><code>space-half</code></li>
-          <li><code>space</code></li>
-          <li><code>space-x2</code></li>
-          <li><code>space-x3</code></li>
-          <li><code>space-x4</code></li>
-        </ul>
+  <body class="docs-body">
+    <main class="space-v">
+      <section>
+        <h1 class="headline">Properties</h1>
       </section>
 
-      <section class="space-v">
-        <h2>Font Properties</h2>
-        <ul>
-          <li><code>--base-font-size</code> 20px;</li>
-          <li><code>--body-font-size</code> 0.95rem;</li>
-          <li><code>--base-font-lh</code> 1.5rem;</li>
-        </ul>
-      </section>
+      <article class="space-v-x2">
+        <section class="space-v">
+          <h2>Colors</h2>
+          <p>
+            You can hover on each box to see the property for that particular
+            color.
+          </p>
+          <section class="space-v-half">
+            <h3>Primary</h3>
+            <div class="flexible-grid colors">
+              <div title="primary-dark" class="color primary-dark"></div>
+              <div title="primary" class="color primary"></div>
+              <div title="primary-light" class="color primary-light"></div>
+              <div title="primary-lighter" class="color primary-lighter"></div>
+              <div title="primary-lightest" class="color primary-lightest"></div>
+            </div>
+          </section>
 
-      <section class="space-v">
-        <h2>Animation Properties</h2>
-        <ul>
-          <li><code>--transition-duration</code> 250ms;</li>
-          <li><code>--transition-easing</code> ease-in-out;</li>
-          <li>
-            <code>--transition-all</code> all var(--transition-duration)
-            var(--transition-easing);
-          </li>
-        </ul>
-      </section>
-    </article>
+          <section class="space-v-half">
+            <h3>Secondary</h3>
+            <div class="flexible-grid colors">
+              <div title="secondary-dark" class="color secondary-dark"></div>
+              <div title="secondary" class="color secondary"></div>
+              <div title="secondary-light" class="color secondary-light"></div>
+              <div
+                title="secondary-lighter"
+                class="color secondary-lighter"
+              ></div>
+              <div
+                title="secondary-lightest"
+                class="color secondary-lightest"
+              ></div>
+            </div>
+          </section>
+
+          <section class="space-v-half">
+            <h3>Success</h3>
+            <div class="flexible-grid colors">
+              <div title="success-dark" class="color success-dark"></div>
+              <div title="success" class="color success"></div>
+              <div title="success-light" class="color success-light"></div>
+              <div title="success-lighter" class="color success-lighter"></div>
+              <div title="success-lightest" class="color success-lightest"></div>
+            </div>
+          </section>
+
+          <section class="space-v-half">
+            <h3>Danger</h3>
+            <div class="flexible-grid colors">
+              <div title="danger-dark" class="color danger-dark"></div>
+              <div title="danger" class="color danger"></div>
+              <div title="danger-light" class="color danger-light"></div>
+              <div title="danger-lighter" class="color danger-lighter"></div>
+              <div title="danger-lightest" class="color danger-lightest"></div>
+            </div>
+          </section>
+
+          <section class="space-v-half">
+            <h3>Warning</h3>
+            <div class="flexible-grid colors">
+              <div title="warning-dark" class="color warning-dark"></div>
+              <div title="warning" class="color warning"></div>
+              <div title="warning-light" class="color warning-light"></div>
+              <div title="warning-lighter" class="color warning-lighter"></div>
+              <div title="warning-lightest" class="color warning-lightest"></div>
+            </div>
+          </section>
+
+          <section class="space-v-half">
+            <h3>Info</h3>
+            <div class="flexible-grid colors">
+              <div title="info-dark" class="color info-dark"></div>
+              <div title="info" class="color info"></div>
+              <div title="info-light" class="color info-light"></div>
+              <div title="info-lighter" class="color info-lighter"></div>
+              <div title="info-lightest" class="color info-lightest"></div>
+            </div>
+          </section>
+
+          <section class="space-v-half">
+            <h3>Gray</h3>
+            <div class="flexible-grid colors">
+              <div title="gray-dark" class="color gray-dark"></div>
+              <div title="gray" class="color gray"></div>
+              <div title="gray-light" class="color gray-light"></div>
+              <div title="gray-lighter" class="color gray-lighter"></div>
+              <div title="gray-lightest" class="color gray-lightest"></div>
+            </div>
+          </section>
+        </section>
+
+        <section class="space-v">
+          <h2>Spaces</h2>
+          <p>
+            Space properties can be used when spacing elements on a page to ensure
+            consistency. The base value is at <code>1rem</code>, so if the base
+            font size is 16px, the base space value is then computed as 16px. All
+            the space-related properties are listed below:
+          </p>
+          <ul>
+            <li><code>space-half</code></li>
+            <li><code>space</code></li>
+            <li><code>space-x2</code></li>
+            <li><code>space-x3</code></li>
+            <li><code>space-x4</code></li>
+          </ul>
+        </section>
+
+        <section class="space-v">
+          <h2>Fonts</h2>
+          <ul>
+            <li><code>--base-font-size</code> 20px;</li>
+            <li><code>--body-font-size</code> 0.95rem;</li>
+            <li><code>--base-font-lh</code> 1.5rem;</li>
+          </ul>
+        </section>
+
+        <section class="space-v">
+          <h2>Animation Properties</h2>
+          <ul>
+            <li><code>--transition-duration</code> 250ms;</li>
+            <li><code>--transition-easing</code> ease-in-out;</li>
+            <li>
+              <code>--transition-all</code> all var(--transition-duration)
+              var(--transition-easing);
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

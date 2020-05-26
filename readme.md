@@ -37,3 +37,5 @@ The API documentation is available in the [docs](./docs) folder.
 - [ ] Add guides and tutorials
 - [ ] Hooks for creating more complex custom components
 - [ ] Hooks for creating buttons out there? size system etc ...
+- [ ] Move the doc examples to one page for starters
+- [ ] Rethink docs generation, 11ty?

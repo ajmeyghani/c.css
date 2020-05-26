@@ -1,84 +1,9 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const pages = require("./pages.config");
 const path = require("path");
 const glob = require("glob");
 const baseModules = [];
-
-/* TODO: generate with a loop and a list of config. */
-const htmlPages = [
-  new HtmlWebpackPlugin({
-    title: "c.css",
-    filename: "public/index.html",
-    template: "pages/index.tpl.html",
-    chunks: ["c", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - arrange",
-    filename: "public/arrange.html",
-    template: "pages/arrange.tpl.html",
-    chunks: ["core", "lists", "typography", "layout", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - space",
-    filename: "public/space.html",
-    template: "pages/space.tpl.html",
-    chunks: ["core", "typography", "layout", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - content-mode",
-    filename: "public/content-mode.html",
-    template: "pages/content-mode.tpl.html",
-    chunks: ["core", "typography", "layout", "modes", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - lists",
-    filename: "public/lists.html",
-    template: "pages/lists.tpl.html",
-    chunks: ["core", "typography", "layout", "lists", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - typography",
-    filename: "public/typography.html",
-    template: "pages/typography.tpl.html",
-    chunks: ["core", "typography", "modes", "buttons", "layout", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - Login Page Example",
-    filename: "public/login.html",
-    template: "pages/login.tpl.html",
-    chunks: ["core", "typography", "buttons", "layout", "forms", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - colors",
-    filename: "public/colors.html",
-    template: "pages/colors.tpl.html",
-    chunks: ["core", "typography", "layout", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - properties",
-    filename: "public/properties.html",
-    template: "pages/properties.tpl.html",
-    chunks: ["core", "typography", "lists", "layout", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - tables",
-    filename: "public/tables.html",
-    template: "pages/tables.tpl.html",
-    chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - buttons",
-    filename: "public/buttons.html",
-    template: "pages/buttons.tpl.html",
-    chunks: ["core", "typography", "layout", "buttons", "docs"]
-  }),
-  new HtmlWebpackPlugin({
-    title: "c.css - forms",
-    filename: "public/forms.html",
-    template: "pages/forms.tpl.html",
-    chunks: ["core", "typography", "visual", "layout", "elements", "docs"]
-  })
-];
 
 const plugins = [
   new MiniCssExtractPlugin({
@@ -86,7 +11,7 @@ const plugins = [
     publicPath: "/css",
     ignoreOrder: true,
   }),
-  ...htmlPages,
+  ...pages.map(p => (new HtmlWebpackPlugin(p))),
 ];
 
 module.exports = {
