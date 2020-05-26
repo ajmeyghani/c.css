@@ -55,6 +55,12 @@ const htmlPages = [
     chunks: ["core", "typography", "layout", "docs"]
   }),
   new HtmlWebpackPlugin({
+    title: "c.css - properties",
+    filename: "public/properties.html",
+    template: "pages/properties.tpl.html",
+    chunks: ["core", "typography", "lists", "layout", "docs"]
+  }),
+  new HtmlWebpackPlugin({
     title: "c.css - tables",
     filename: "public/tables.html",
     template: "pages/tables.tpl.html",
