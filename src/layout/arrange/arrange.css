@@ -6,60 +6,59 @@
 
 /* Stacking */
 [class*="arrange"],
-[class*="arrange"][class*="sh"] {
+[class*="arrange"][class*="-sh"] {
   flex-direction: row;
 }
 
-[class*="arrange"][class*="sv"] {
+[class*="arrange"][class*="-sv"] {
   flex-direction: column;
 }
 
 /* Centering */
-[class*="arrange"][class*="cv"],
-[class*="arrange"][class*="sh"][class*="cv"] {
+[class*="arrange"][class*="-cv"],
+[class*="arrange"][class*="-sh"][class*="-cv"] {
   align-items: center;
 }
 
 [class*="arrange"][class*="ch"],
-[class*="arrange"][class*="sh"][class*="ch"] {
+[class*="arrange"][class*="-sh"][class*="ch"] {
   justify-content: center;
 }
 
-[class*="arrange"][class*="sv"][class*="cv"] {
+[class*="arrange"][class*="-sv"][class*="-cv"] {
   justify-content: center;
   align-items: flex-start;
 }
 
-[class*="arrange"][class*="sv"][class*="ch"] {
+[class*="arrange"][class*="-sv"][class*="ch"] {
   justify-content: flex-start;
   align-items: center;
 }
 
-[class*="arrange"][class*="cv"][class*="ch"] {
+[class*="arrange"][class*="-cv"][class*="ch"] {
   justify-content: center;
   align-items: center;
 }
 
 /* Distributing */
-[class*="arrange"][class*="dist"],
-[class*="arrange"][class*="sh"][class*="dist"] {
+[class*="arrange"][class*="-dist"],
+[class*="arrange"][class*="-sh"][class*="-dist"] {
   justify-content: space-between;
 }
 
 /* Wrapping */
-/* TODO: revisit this and how it compares to space-h */
-[class*="arrange"][class*="wrap"],
-[class*="arrange"][class*="sh"][class*="wrap"] {
-  flex-wrap: wrap;
-  align-items: center;
+[class*="arrange"][class*="-wrap"],
+[class*="arrange"][class*="-sh"][class*="-wrap"] {
   --arrange-gap: var(--space);
+  flex-wrap: wrap;
+  align-content: start;
 }
 
-[class*="arrange"][class*="wrap"] > *:not(:last-child) {
+[class*="arrange"][class*="-wrap"] > *:not(:last-child) {
   margin-right: var(--arrange-gap);
 }
 
-[class*="arrange"][class*="wrap"] > * {
+[class*="arrange"][class*="-wrap"] > * {
   margin-bottom: var(--arrange-gap);
 }
 
@@ -70,3 +69,26 @@
 [class*="arrange"][class*="-wrap"][class*="-x2"] {
   --arrange-gap: var(--space-x2);
 }
+
+[class*="arrange"][class*="-wrap"][class*="-x3"] {
+  --arrange-gap: var(--space-x3);
+}
+
+[class*="arrange"][class*="-wrap"][class*="-x4"] {
+  --arrange-gap: var(--space-x4);
+}
+
+/* wrap and center */
+[class*="arrange"][class*="-wrap"][class*="-cv"] {
+  align-content: center;
+  margin: calc(var(--arrange-gap) * -1);
+  margin-left: 0;
+  margin-top: var(--arrange-gap);
+}
+
+[class*="arrange"][class*="-wrap"][class*="-cv"] > * {
+  margin: calc(var(--arrange-gap) / 2);
+  margin-bottom: calc(var(--arrange-gap) / 2);
+  margin-left: 0;
+}
+

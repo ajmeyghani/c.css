@@ -12,13 +12,15 @@ The arrange class has the following form, where `m` is a modifier:
 
 `.arrange-[m1]-[m2]...[m]`
 
-Possible modifier values are `sh`, `sv`, `ch`, `cv`, `dist`, and `wrap`:
+Possible modifier values are `sh`, `sv`, `ch`, `cv`, `dist`, `start`, `end`, `dist`:
 
 - `sh`: stack horizontally, children next to each other
 - `sv`: stack vertically, children stack on top up each other
 - `c[h/v]`: `ch` or `cv`, center horizontally/vertically
 - `dist`: distribute children equally
 - `wrap`: distributes children horizontally and margin right and bottom and wraps around when the content can't fit
+- `start`: TODO
+- `end`: TODO
 
 Modifiers are separated with a hyphen. Note that the order of the modifiers
 doesn't matter. In other words, `.arrange-sv-ch` is the same as `.arange-ch-sv`
